@@ -1,0 +1,268 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+}
+.box-outer{
+  width: 100%;
+  height: 100%;
+  background:transparent;
+  position: fixed;
+  overflow: hidden;
+  .box-inner-out{
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    overflow: hidden;
+    .div-top{
+      width: 100%;
+      height: 15vh;
+      /*background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/pexels-jonathan-borba-3259627.jpg);*/
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      padding: 2%;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      .div-top-left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 2%;
+        padding-bottom: 1%;
+
+        .logo-title{
+          font-family: 'Anton', sans-serif;
+          font-size: 157%;
+          color: #4b613b;
+        }
+      }
+      .div-top-right{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 3%;
+        .nav-label{
+          font-family: 'Roboto', sans-serif;
+          transition: 0.5s;
+        }
+        .nav-label:hover{
+          color:#464c3a;
+          cursor: pointer;
+        }
+      }
+    }
+    .midder-div{
+      padding-top: 1%;
+      width: 100%;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin-left: 5%;
+      margin-top: -50px;
+      .div-left{
+        height: 50%;
+        width: 40%;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: 5% 10px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .div-right{
+        height: 100%;
+        width: 60%;
+        overflow: hidden;
+        padding-bottom: 5%;
+        .data-input-form{
+          overflow: hidden;
+          width: 100%;
+          height:100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .div-set-1{
+            width: 70%;
+            height: 15%;
+            padding-left: 5vh;
+            margin-top: -40px;
+            .user-input-field{
+              width: 30%;
+              transition: 0.2s;
+              height: 6vh;
+              border-radius: 0.5vh;
+              border-style: solid;
+              border-color: #464c3a;
+              border-width: 1px;
+              outline: none;
+              padding-left: 5px;
+            }
+            .user-input-field:hover{
+              border-color: #647d14;
+              transition: 0.2s;
+            }
+            .combo-11{
+              width: 30%;
+              transition: 0.2s;
+              height: 6vh;
+              border-radius: 0.5vh;
+              border-style: solid;
+              border-color: #333333;
+              border-width: 1px;
+              outline: none;
+              margin-top: -0.4vh;
+              padding-left: 5px;
+            }
+            .combo-11:hover{
+              width: 30%;
+              transition: 0.2s;
+              height: 6vh;
+              border-radius: 0.5vh;
+              border-style: solid;
+              border-color: #647d14;
+              border-width: 1px;
+              outline: none;
+              margin-top: -0.4vh;
+              padding-left: 5px;
+            }
+          }
+          .div-set-02{
+            width: 100%;
+            height: 10%;
+            padding-left: 5vh;
+            .combo-1-mini{
+              width: 10%;
+              transition: 0.2s;
+              height: 6vh;
+              border-radius: 0.5vh;
+              border-style: solid;
+              border-color: #464c3a;
+              border-width: 1px;
+              outline: none;
+              padding-left: 5px;
+            }
+            .combo-1-mini:hover{
+              width: 10%;
+              transition: 0.2s;
+              height: 6vh;
+              border-radius: 0.5vh;
+              border-style: solid;
+              border-color: #647d14;
+              border-width: 1px;
+              outline: none;
+              padding-left: 5px;
+            }
+            .user-input-field2-name{
+              width: 50%;
+              transition: 0.2s;
+              height: 6vh;
+              border-radius: 0.5vh;
+              border-style: solid;
+              border-color: #333333;
+              border-width: 1px;
+              outline: none;
+              padding-left: 5px;
+            }
+            .user-input-field2-name:hover{
+              transition: 0.2s;
+              border-color: #647d14;
+            }
+            .submit-button{
+              width: 20vh;
+              height: 6vh;
+              cursor: pointer;
+              transition: 0.5s;
+              border-radius: 0.5vh;
+              margin-left:45vh;
+              margin-top: 1vh;
+              border-style: solid;
+              border-color: #b4cb6c;
+              background: #b4cb6c;
+              transition: 0.3s;
+            }
+            .submit-button:hover{
+              background: #86a131;
+              border-color: #86a131;
+              transition: 0.4s;
+            }
+          }
+          .div-set-03{
+            width: 100%;
+            height: 8%;
+            display: flex;
+            padding-left: 4.5%;
+            justify-content: flex-start;
+            align-items: center;
+            overflow: hidden;
+            .role-btn1{
+              width: 20vh;
+              height: 6vh;
+              cursor: pointer;
+              transition: 0.3s;
+              border-style: solid;
+              border-top-left-radius: 0.5vh;
+              border-bottom-left-radius: 0.5vh;
+              border-color: #333333;
+              border-width: 1px;
+              outline: none;
+              background: transparent;
+            }
+            .role-btn1:hover{
+              background: #788d36;
+              transition: 0.3s;
+              color: white;
+            }
+            .role-btn2{
+              width: 24.7vh;
+              height: 6vh;
+              cursor: pointer;
+              transition: 0.3s;
+              border-style: solid;
+              border-color: #333333;
+              border-width: 1px;
+              border-left: none;
+              outline: none;
+              background: transparent;
+            }
+            .role-btn2:hover{
+              background: #788d36;
+              transition: 0.3s;
+              color: white;
+            }
+            .role-btn3{
+              width: 21vh;
+              height: 6vh;
+              cursor: pointer;
+              border-top-right-radius: 0.5vh;
+              border-bottom-right-radius: 0.5vh;
+              transition: 0.3s;
+              background: transparent;
+              border-style: solid;
+              border-color: #333333;
+              border-width: 1px;
+              border-left: none;
+              outline: none;
+            }
+            .role-btn3:hover{
+              background: #788d36;
+              transition: 0.3s;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

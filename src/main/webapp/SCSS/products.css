@@ -1,0 +1,360 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.section1{
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:0;
+}
+
+.section2{
+    width: 100%;
+    height: 170vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blob{
+    width: 50%;
+    position: absolute;
+    margin-left: -150vh;
+    margin-top: 250vh;
+    z-index:-1;
+    filter:blur(400px);
+}
+
+.section-div-outer-top{
+    width: 100%;
+    height: 15%;
+    background: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    padding: 2%;
+}
+
+.div-top-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+.div-top-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3%;
+}
+
+.logo{
+    width: 5%;
+}
+.logo-title{
+    font-family: 'Anton', sans-serif;
+    font-size: 157%;
+    color: #4b613b;
+}
+
+
+.section-div-outer-bottom{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section-div-outer-bottom-left{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5%;
+    padding-bottom: 7%;
+}
+
+.heading1{
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 400%;
+    color: #71944a;
+}
+
+.heading2{
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 750%;
+    color: #4b613b;
+}
+
+.section-div-outer-bottom-right{
+    width: 60%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    overflow: hidden;
+    margin-top: -5%;
+}
+
+
+
+.section-2-div-top-search{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-search-form{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_field{
+    width: 40%;
+    height: 60%;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-style: solid;
+    border-color: #3c4d04;
+    border-right: none;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 2%;
+    font-size: 90%;
+    border:none;
+    outline: none;
+}
+
+
+.search-button{
+    width: 10%;
+    height: 60%;
+    box-shadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto', sans-serif;
+    background-color: #b6b678;
+    letter-spacing: 1px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-style: solid;
+    border-color: #3c4d04;
+    border-left: none;
+    border:none;
+    color:black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-button:hover{
+    color:white;
+    background-color: #767651;
+    transition: 0.2s;
+}
+
+
+.section-2-product-list{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-row1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+    padding: 2%;
+}
+
+.product-row2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    height: 45%;
+    padding: 2%;
+}
+
+.product{
+    width: 20%;
+    height: 100%;
+    background-color: #fafafa;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.product-img{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.product-det{
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 5%;
+}
+
+.product-det-left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-det-left-top{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.product-det-left-bottom{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    padding-top: 2%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.item-name{
+    font-family: 'Roboto', sans-serif;
+}
+
+.item-price{
+    font-family: 'Roboto', sans-serif;
+}
+
+.qty{
+    font-family: 'Roboto', sans-serif;
+}
+
+.qty-label{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.nav-label{
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+}
+
+.nav-label:hover{
+    color:#464c3a;
+    cursor: pointer;
+}
+
+
+.product-det-right{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.sell-btn{
+    width: 100%;
+    height: 70%;
+    border-radius: 25px;
+    border-style: solid;
+    border:none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    background-color: #b6b678;
+    transition: 0.2s;
+}
+
+.sell-btn:hover{
+    color:white;
+    /*background-color: #767651;*/
+    background-color: #cd7070;
+    transition: 0.2s;
+}
+
+.product-det-right-top{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.product-det-right-bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+
+.ft{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+}
