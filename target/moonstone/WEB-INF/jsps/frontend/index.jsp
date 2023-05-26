@@ -58,6 +58,7 @@
 </div>
 
 <jsp:include page="products.jsp"/>
+
 <jsp:include page="footer.jsp"/>
 </body>
 </html>
