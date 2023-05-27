@@ -25,12 +25,15 @@
         position: absolute;
         color: white;
     }
+    .fix-nav-div{
+        background-color: #333333;
+    }
 </style>
 </head>
-<body>
+<body id="body">
 <div style="width: 60%; height: 50vh; margin-top: 90px; margin-left: 20%; background-color: #000000;"><img src="images/images%20(4).jpeg" style="height: 50vh; width: 30%;"></div>
 <div style="margin-top: -38vh; margin-left: 48%; color: white;">
-<h1 style="margin-left: -2vh; font-size: 6vh; font-family: 'Josefin Sans', sans-serif;">I SPEAK FASHION</h1>
+<h1 style="margin-left: 3vh; font-size: 6vh; font-family: Moskova;">I SPEAK FASHION</h1>
     &nbsp;
     &nbsp;
     &nbsp;

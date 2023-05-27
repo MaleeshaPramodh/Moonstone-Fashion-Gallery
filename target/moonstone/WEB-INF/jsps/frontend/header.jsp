@@ -14,25 +14,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/—Pngtree—.png"/>
-    <style>
-        .nav-div{
-            background-color: #333333;
-            position: fixed;
-            align-items: center;
-            text-align: center;
-            justify-content: space-between;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 12vh;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-            transition: background-color 0.3s, height 0.3s;
-            z-index: 999;
-        }
-    </style>
+<%--    <style>--%>
+<%--        .nav-div{--%>
+<%--            background-color: #333333;--%>
+<%--            position: fixed;--%>
+<%--            align-items: center;--%>
+<%--            text-align: center;--%>
+<%--            justify-content: space-between;--%>
+<%--            top: 0;--%>
+<%--            left: 0;--%>
+<%--            width: 100%;--%>
+<%--            height: 12vh;--%>
+<%--            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));--%>
+<%--            transition: background-color 0.3s, height 0.3s;--%>
+<%--            z-index: 999;--%>
+<%--        }--%>
+<%--    </style>--%>
 </head>
 <body>
-<div class="nav-div">
+<div id="nav-div" class="nav-div">
     <table>
         <tr>
             <td class="col1" style="width: 30%;">
