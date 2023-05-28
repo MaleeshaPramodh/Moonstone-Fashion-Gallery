@@ -1,8 +1,6 @@
 package com.jiat.moonstone.config;
 
-import com.jiat.moonstone.controllers.HomeController;
-import com.jiat.moonstone.controllers.LoginController;
-import com.jiat.moonstone.controllers.RegisterController;
+import com.jiat.moonstone.controllers.*;
 import org.baswell.routes.RoutesFilter;
 import org.baswell.routes.RoutingTable;
 
@@ -21,6 +19,8 @@ public class RouteConfig extends RoutesFilter {
                 .add(new HomeController())
                 .add(new LoginController())
                 .add(new RegisterController())
+                .add(new ProductsController())
+                .add(new GalleryController())
                 .build();
     }
 }

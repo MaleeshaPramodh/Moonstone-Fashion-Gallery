@@ -14,59 +14,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/—Pngtree—.png"/>
-<%--    <style>--%>
-<%--        .nav-div{--%>
-<%--            background-color: #333333;--%>
-<%--            position: fixed;--%>
-<%--            align-items: center;--%>
-<%--            text-align: center;--%>
-<%--            justify-content: space-between;--%>
-<%--            top: 0;--%>
-<%--            left: 0;--%>
-<%--            width: 100%;--%>
-<%--            height: 12vh;--%>
-<%--            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));--%>
-<%--            transition: background-color 0.3s, height 0.3s;--%>
-<%--            z-index: 999;--%>
-<%--        }--%>
-<%--    </style>--%>
 </head>
+
 <body>
 <div id="nav-div" class="nav-div">
     <table>
         <tr>
-            <td class="col1" style="width: 30%;">
-
-                <div class="div-logo"><img class="img-logo" src="images/—Pngtree—.png">&nbsp;&nbsp;
-                    <h1 style="font-size: 4vh; margin-left: 90px; margin-top: -40px; font-family: 'Josefin Sans', sans-serif;">Moonstone Fashion</h1>
-                </div>
-
-                <span style="color: #ffcc33;font-size: 15px;"></span></a>
-            </td>
-            <td>
-
-            </td>
-            <td>
-
+            <td class="col1">
+                <a class="back" href="/moonstone"><div class="div-logo"><img class="img-logo" src="images/—Pngtree—.png">&nbsp;&nbsp;
+                    <h1 class="logo-name">Moonstone Fashion</h1>
+                </div></a>
             </td>
 
-            <td class="col2" style="width: 100%;">
-                <div style="margin-left: 50%;">
-                    <a class="menu" href="" style="text-decoration: none;">
-                        <span class="s1" style="font-family: 'Josefin Sans', sans-serif;">Gallery</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td class="col2">
+                <div class="col2-div">
+                    <a class="menu" href="/moonstone/gallery">
+                        <span class="s1">Gallery</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </a>
-                    <a class="menu" href="" style="text-decoration: none;">
-                        <span class="s1" style="font-family: 'Josefin Sans', sans-serif;">Products</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a id="products" class="menu" href="/moonstone/products">
+                        <span class="s1">Products</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </a>
-                    <a class="menu" href="" style="text-decoration: none;">
-                        <span class="s1" style="font-family: 'Josefin Sans', sans-serif;">About Us</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="menu" href="">
+                        <span class="s1">About Us</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </a>
-                    <a class="menu" href="login" style="text-decoration: none;">
-                        <span class="s1" style="font-family: 'Josefin Sans', sans-serif;">Login</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="menu" href="login">
+                        <span class="s1">Login</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </a>
                 </div>
             </td>
-
         </tr>
     </table>
 </div>

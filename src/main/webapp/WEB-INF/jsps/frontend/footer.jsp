@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="f-div">
+
+</div>
 <footer class="ft">
   <p>&copy; 2023 Moonstone Fashion Gallery(Pvt).Ltd. All Rights Reserved.</p>
 </footer>

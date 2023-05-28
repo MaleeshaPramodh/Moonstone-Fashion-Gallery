@@ -14,27 +14,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
-<style>
-    .phar{
-        background-color: #333333;
-        border-radius: 10px;
-        width: 50%;
-        height: 80%;
-        margin-left: 40%;
-        margin-top: -42%;
-        position: absolute;
-        color: white;
-    }
-    .fix-nav-div{
-        background-color: #333333;
-    }
-    .fix-nav-
-</style>
 </head>
-<body id="body">
-<div style="width: 60%; height: 50vh; margin-top: 90px; margin-left: 20%; background-color: #000000;"><img src="images/images%20(4).jpeg" style="height: 50vh; width: 30%;"></div>
-<div style="margin-top: -38vh; margin-left: 48%; color: white;">
-<h1 style="margin-left: 3vh; font-size: 6vh; font-family: Moskova;">I SPEAK FASHION</h1>
+
+<body>
+<div id="body">
+<div class="ad-div"><img src="images/images%20(4).jpeg" class="ad-img"></div>
+<div class="div1-bdy">
+<h1 class="ad-text1">I SPEAK FASHION</h1>
     &nbsp;
     &nbsp;
     &nbsp;
@@ -45,23 +31,27 @@
     &nbsp;
     &nbsp;
     &nbsp;
-    <h2 style="margin-left: -5vh; font-size: 5vh;">Moonstone Fashion Gallery</h2>
+    <h2 class="ad-text2">Moonstone Fashion Gallery</h2>
     &nbsp;
     &nbsp;
     &nbsp;
     &nbsp;
     &nbsp;
     &nbsp;
-    <h3 style="margin-left: 10.5vh; font-size: 2.5vh; font-family: 'Josefin Sans', sans-serif;">Hotline : 0772973525</h3>
-    <h3 style="margin-left: 1vh; font-size: 2.5vh; font-family: 'Josefin Sans', sans-serif;">keels Upstairs, Wijerama, Nugegoda.</h3>
+    <h3 class="ad-text3">Hotline : 0772973525</h3>
+    <h3 class="ad-text4">keels Upstairs, Wijerama, Nugegoda.</h3>
 </div>
 &nbsp;
-<div style="width: 100%; height: 100%;">
-    <img src="images/depositphotos_22619283-stock-photo-shopping-woman.jpg" style="width: 100%; height: 100%; margin-top: 8%;">
+<div class="div2">
+    <img src="images/depositphotos_22619283-stock-photo-shopping-woman.jpg" class="img2">
     <div class="phar">&nbsp;&nbsp;<p>&nbsp;&nbsp;&nbsp;&nbsp;The Best Quality </p>&nbsp;&nbsp;</div>
 </div>
+    <div></div>
+</div>
 
-<jsp:include page="products.jsp"/>
+
+<script src="JS/navigation.js"></script>
+<script src="JS/productpage.js"></script>
 
 <jsp:include page="footer.jsp"/>
 </body>

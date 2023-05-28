@@ -1,3 +1,4 @@
+<jsp:include page="header.jsp"/>
 <%--
   Created by IntelliJ IDEA.
   User: ADMIN
@@ -8,11 +9,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
+    <title>Moonstone Fashion</title>
     <link type="text/css" rel="stylesheet" href="SCSS/products.css"/>
 </head>
-<body>
-<section  class="section2" style="margin-top: 20vh;">
+<body id="body">
+<section class="section2" style="margin-top: 20vh;">
   <div class="section-2-div-top-search">
     <form method="post" action="#" class="product-search-form">
       <input type="text" name="product_name" placeholder="Please Enter The Product Name Here" class="search_field"/>
@@ -22,17 +23,18 @@
   <div class="section-2-product-list">
     <div class="product-row1">
       <div class="product">
-        <div class="product-img" style="  background-image: url('images/plant2.jpg');
+        <div class="product-img" style="
                              background-size: cover;
                              background-position: center;
                              background-repeat: no-repeat;">
+          <img src="images/images%20(5).jpeg">
 
         </div>
         <div class="product-det">
           <div class="product-det-left">
-            <div class="product-det-left-top"><span class="item-name">Croton Plant</span></div>
+            <div class="product-det-left-top"><span class="item-name">Code: BTH01</span></div>
 
-            <div class="product-det-left-bottom"><span class="item-price">Rs. 500.00</span></div>
+            <div class="product-det-left-bottom"><span class="item-price">Rs. 3500.00</span></div>
           </div>
           <div class="product-det-right">
             <div class="product-det-right-top"><span class="qty-label">Qty : </span><span class="qty">12</span>&nbsp;&nbsp;</div>
@@ -83,5 +85,8 @@
     </div>
   </div>
 </section>
+
+<script src="JS/navigation.js"></script>
+<jsp:include page="footer.jsp"/>
 </body>
 </html>
