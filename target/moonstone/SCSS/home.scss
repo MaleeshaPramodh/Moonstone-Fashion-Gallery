@@ -26,12 +26,14 @@
   color: white;
   .ad-text1{
     margin-left: 3vh;
-    font-size: 6vh;
+    font-size: 7vh;
     font-family: Moskova;
   }
   .ad-text2{
+    font-family: Bagdoll Display;
     margin-left: -5vh;
-    font-size: 5vh;
+    font-size: 6vh;
+
   }
   .ad-text3{
     margin-left: 10.5vh;
@@ -45,8 +47,18 @@
   }
 }
 .div2{
-  margin-top: -25vh;
   width: 100%;
+  .video-div{
+    height: 100%;
+    width: 50%;
+    margin-left: -5vh;
+    margin-top: 17vh;
+    position: absolute;
+    .video{
+      height: 100%;
+      width: 100%;
+    }
+  }
   .img2{
     width: 100%;
     height: 100%;
@@ -57,9 +69,83 @@
     border-radius: 10px;
     width: 50%;
     height: 80%;
-    margin-left: 40%;
+    margin-left: 48%;
     margin-top: -42%;
     position: absolute;
     color: white;
+    .para-text{
+      width: 90%;
+      height: 80%;
+      margin-left: 5vh;
+      margin-top: 5vh;
+      .p{
+        font-family: Bagdoll Display;
+        margin-top: 5vh;
+        font-size: 5vh;
+      }
+      .p1{
+        font-family: 'Roboto', sans-serif;
+        margin-top: 5vh;
+      }
+      .p2{
+        font-family: 'Roboto', sans-serif;
+        margin-top: -7vh;
+        font-size: 5vh;
+        margin-left: 38vh;
+      }
+      .whatsapp{
+        margin-top: 5vh;
+        width: 8vh;
+        height: 8vh;
+        margin-left: 28vh;
+      }
+    }
+  }
+}
+.ad-div2{
+  width: 100%;
+  height: 80vh;
+  margin-top: 90px;
+  background: none;
+  margin-left: 10vh;
+  .ad-img2{
+    height: 70vh;
+    width: 30%;
+  }
+}
+.video-div2{
+  margin-left: 20%;
+  margin-top: 20vh;
+  width: 130vh;
+  height: 73.6vh;
+  background-color: black;
+  position: absolute;
+  .text-div1{
+    margin-left: 50%;
+    margin-top: 30vh;
+    color: white;
+    font-family: Bagdoll Display;
+    font-size: 4vh;
+    position: absolute;
+  }
+}
+.video-div3{
+  margin-left: 20%;
+  margin-top: 110vh;
+  width: 130vh;
+  height: 75vh;
+  background-color: black;
+  position: absolute;
+  .video2{
+    margin-left: 69.5%;
+    margin-top: -2.8vh;
+  }
+  .text-div{
+    margin-left: 22vh;
+    margin-top: 30vh;
+    color: white;
+    font-family: Bagdoll Display;
+    font-size: 4vh;
+    position: absolute;
   }
 }

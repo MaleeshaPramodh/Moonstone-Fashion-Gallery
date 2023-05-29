@@ -43,12 +43,42 @@
 </div>
 &nbsp;
 <div class="div2">
+    <div class="video-div">
+        <video width="640" height="480" src="videos/fashion.mp4" class="video" autoplay loop muted/>
+    </div>
     <img src="images/depositphotos_22619283-stock-photo-shopping-woman.jpg" class="img2">
-    <div class="phar">&nbsp;&nbsp;<p>&nbsp;&nbsp;&nbsp;&nbsp;The Best Quality </p>&nbsp;&nbsp;</div>
+    <div class="phar">&nbsp;
+        <div class="para-text">
+        <p class="p">
+        The extraordinary designs, brightness & eye catching colors of our Exclusive Moonstone Hand painted Bathik clothing will always makes you shine!
+        </p>
+            <p class="p">
+                Very Limited Edition Only !
+                Hurry up!! Inbox us to get it for your now!
+            </p>
+        <p class="p1">
+        Sizes Available: XS | S | M | L | XL | XXL
+        </p>
+            <img src="images/icons8-whatsapp-48.png" class="whatsapp">
+            <p class="p2"> 0772973525</p>
+        </div>
+    </div>
 </div>
-    <div></div>
+    <div>
+        <div class="ad-div2">
+            <img src="images/1.jpg" class="ad-img2">
+            <img src="images/WhatsApp%20Image%202023-05-27%20at%2018.51.21.jpg" class="ad-img2">
+            <img src="images/3.jpg" class="ad-img2">
+        </div>
+    </div>
+<div class="video-div2">
+    <div class="text-div1"><h1>New Fashion !</h1></div>
+    <video width="250" height="480" src="videos/Facebook%20video%202813637768773544.mp4" style="margin-top: -2vh;" controls/>
 </div>
-
+    <div class="video-div3">
+        <div class="text-div"><h1>Limited Edition !</h1></div>
+        <video width="250" height="480" src="videos/Facebook%20video%20651517226781342.mp4" class="video2" controls/>
+    </div>
 
 <script src="JS/navigation.js"></script>
 <script src="JS/productpage.js"></script>

@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: ADMIN
+  User: MALEESHA
   Date: 5/25/2023
   Time: 6:05 PM
   To change this template use File | Settings | File Templates.
@@ -15,11 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="f-div">
-
-</div>
 <footer class="ft">
-  <p>&copy; 2023 Moonstone Fashion Gallery(Pvt).Ltd. All Rights Reserved.</p>
+  <p>&copy; 2023 Moonstone Fashion Gallery All rights reserved. Unauthorized use of these photos and video, copying, publishing and distribution is prohibited.</p>
 </footer>
 </body>
 </html>

@@ -25,7 +25,7 @@ public class MailService {
         Session session = Session.getInstance(properties, authenticator);
         try {
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("info@eshop.com"));
+            message.setFrom(new InternetAddress("info@moonstonefashion.com"));
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(to));
             message.setText("Hello Test");
 

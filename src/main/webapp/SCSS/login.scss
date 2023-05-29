@@ -28,7 +28,6 @@
     animation-duration: 1s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
-
     @keyframes anim{
       0%{
         margin-top:200vh;
@@ -60,6 +59,11 @@
         flex-direction: column;
         align-items: center;
       }
+    }
+    .close{
+      position: absolute;
+      margin-left: 93%;
+      margin-top: 2vh;
     }
     .head-1{
       width: 100%;

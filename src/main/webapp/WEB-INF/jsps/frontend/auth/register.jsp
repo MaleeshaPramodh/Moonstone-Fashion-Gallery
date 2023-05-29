@@ -20,6 +20,7 @@
 <body>
 <div class="box-outer">
     <div class="box-body-inner">
+        <div class="close" style="position: absolute;"><a href="/moonstone"><img src="images/icons8-close-16.png"></a></div>
         <div class="head-1">
             <h1 class="login-head">Get Signed Up</h1>
         </div>
