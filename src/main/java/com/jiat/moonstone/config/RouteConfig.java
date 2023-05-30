@@ -21,6 +21,7 @@ public class RouteConfig extends RoutesFilter {
                 .add(new RegisterController())
                 .add(new ProductsController())
                 .add(new GalleryController())
+                .add(new AboutUsController())
                 .build();
     }
 }

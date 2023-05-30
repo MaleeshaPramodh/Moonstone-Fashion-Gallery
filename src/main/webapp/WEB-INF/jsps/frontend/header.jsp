@@ -34,7 +34,7 @@
                     <a id="products" class="menu" href="/moonstone/products">
                         <span class="s1">Products</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </a>
-                    <a class="menu" href="">
+                    <a class="menu" href="/moonstone/aboutus">
                         <span class="s1">About Us</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </a>
                     <a class="menu" href="login">
@@ -44,6 +44,23 @@
             </td>
         </tr>
     </table>
+    <div class="facebook">
+    <%
+        String dynamicUrl = "https://web.facebook.com/people/Moonstone-Fashion-Gallery/100050141931959/";
+    %>
+    <a href="<%= dynamicUrl %>"><img src="images/icons8-facebook-48.png"></a>
+
+        <%
+            String phoneNumber = "772973525"; // Replace with your desired phone number
+            String whatsappLink = "https://api.whatsapp.com/send?phone=" + phoneNumber;
+        %>
+        <a href="<%= whatsappLink %>"><img src="images/icons8-whatsapp-48.png"></a>
+
+        <%
+            String dynamic_Url = "https://www.instagram.com/moonstone_fashion_gallery/";
+        %>
+        <a href="<%= dynamic_Url %>"><img src="images/icons8-instagram-48.png"></a>
+    </div>
 </div>
 </body>
 </html>

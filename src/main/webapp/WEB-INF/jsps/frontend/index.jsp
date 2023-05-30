@@ -73,11 +73,11 @@
     </div>
 <div class="video-div2">
     <div class="text-div1"><h1>New Fashion !</h1></div>
-    <video width="250" height="480" src="videos/Facebook%20video%202813637768773544.mp4" style="margin-top: -2vh;" controls/>
+    <video width="250" height="480" src="videos/Facebook%20video%202813637768773544.mp4" style="margin-top: -2vh;" autoplay loop muted/>
 </div>
     <div class="video-div3">
         <div class="text-div"><h1>Limited Edition !</h1></div>
-        <video width="250" height="480" src="videos/Facebook%20video%20651517226781342.mp4" class="video2" controls/>
+        <video width="250" height="480" src="videos/Facebook%20video%20651517226781342.mp4" class="video2" autoplay loop muted/>
     </div>
 
 <script src="JS/navigation.js"></script>
