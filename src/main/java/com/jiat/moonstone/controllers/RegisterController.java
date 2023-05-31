@@ -1,6 +1,8 @@
 package com.jiat.moonstone.controllers;
 
 import com.jiat.moonstone.entity.User;
+import com.jiat.moonstone.mail.VerificationMail;
+import com.jiat.moonstone.providers.MailServiceProvider;
 import com.jiat.moonstone.util.Encryption;
 import com.jiat.moonstone.util.HibernateUtil;
 import org.baswell.routes.HttpMethod;
@@ -45,6 +47,9 @@ public class RegisterController {
         transaction.commit();
 
         session.close();
+
+        VerificationMail mail = new VerificationMail(user.getEmail(), "1234");
+        MailServiceProvider.getInstance().sendMail(mail);
 
         return "frontend/auth/login.jsp";
     }
