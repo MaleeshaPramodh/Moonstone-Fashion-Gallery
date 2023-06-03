@@ -1,5 +1,6 @@
 package com.jiat.moonstone.mail;
 
+import com.jiat.moonstone.util.Env;
 import io.rocketbase.mail.model.HtmlTextEmail;
 
 import javax.mail.Message;
@@ -19,28 +20,19 @@ public class VerificationMail extends Mailable{
     public void build(Message message) throws MessagingException {
         message.setRecipient(Message.RecipientType.TO, new InternetAddress(to));
 
+        final String url = Env.get("app.base_url")+"/verify?token="+verificationCode;
+
         HtmlTextEmail content = getEmailTemplateBuilder()
                 .header()
-                .logo("https://localhost:8080/moonstone/images/—Pngtree—.png").logoHeight(41)
+                .logo("https://www.rocketbase.io/img/logo-dark.png").logoHeight(41)
                 .and()
-                .text("Welcome to Moonstone Fashion Gallery!").h1().center().and()
-                .text("Thanks for Register our site. We’re thrilled to have you on board. To get the most out of Product, do this primary next step:").and()
-                .button("Do this Next", "http://localhost:8080/moonstone/").blue().and()
-                .text("For reference, here's your login information:").and()
-                .attribute()
-                .keyValue("Login Page", "{{login_url}}")
-                .keyValue("Username", "{{username}}")
-                .and()
-                .html("If you have any questions, feel free to <a href=\"mailto:{{support_email}}\">email our customer success team</a>. (We're lightning quick at replying.) We also offer <a href=\"{{live_chat_url}}\">live chat</a> during business hours.",
-                        "If you have any questions, feel free to email our customer success team\n" +
-                                "(We're lightning quick at replying.) We also offer live chat during business hours.").and()
-                .text("Cheers,\n" +
-                        "The [Product Name] Team").and()
-                .copyright("rocketbase").url("https://www.rocketbase.io").suffix(". All rights reserved.").and()
-                .footerText("Moonstone Fashion Gallery\n" +
-                        "keels Upstairs, Wijerama, Nugegoda.\n" +
-                        "Suite 1234").and()
-                .footerImage("https://cdn.rocketbase.io/assets/loading/no-image.jpg").width(100).linkUrl("http://localhost:8080/moonstone/").and()
+                .text("Welcome, "+to).h1().center().and()
+                .text("To verify your email address click on the button below.").center().and()
+                .text("If you did not make this request, then you can ignore this email.").center().and()
+                .button("Verify Your Email Address", url).blue().and()
+                .text("If you have trouble paste this link into your browser").center().and()
+                .html("<a href=\""+url+"\">"+url+"</a>").and()
+                .copyright("Moonstone Fashion").url(Env.get("app.base_url")).suffix(". All rights reserved.")
                 .build();
 
         //message.setText("Hello Dev, your verification code is:"+verificationCode);
