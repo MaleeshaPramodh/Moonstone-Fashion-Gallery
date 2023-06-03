@@ -12,6 +12,9 @@
     <title>Moonstone Fashion</title>
 </head>
 <body>
+<div>
+
+</div>
 
 <jsp:include page="footer.jsp"/>
 </body>

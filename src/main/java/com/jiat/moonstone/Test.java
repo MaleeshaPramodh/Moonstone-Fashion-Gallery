@@ -8,6 +8,14 @@ public class Test {
         //Encryption.encrypt("1234");
         //String name = Env.get("mailtrap.host");
         // System.out.println(name);
-        MailService.sendMail("maleesha.pramodh.mph@gmail.com", null);
+        //MailService.sendMail("maleesha.pramodh.mph@gmail.com", null);
+
+        //  UUID uuid = UUID.randomUUID();
+        //   System.out.println(uuid.toString());
+
+        //String s = RandomStringUtils.randomAlphanumeric(20);
+        // System.out.println(s);
+
+        //  System.out.println(Env.get("app.base_url"));
     }
 }
