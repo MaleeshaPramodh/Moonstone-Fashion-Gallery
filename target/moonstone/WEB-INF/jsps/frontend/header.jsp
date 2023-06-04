@@ -48,18 +48,18 @@
     <%
         String dynamicUrl = "https://web.facebook.com/people/Moonstone-Fashion-Gallery/100050141931959/";
     %>
-    <a href="<%= dynamicUrl %>"><img src="images/icons8-facebook-48.png"></a>
+    <a href="<%= dynamicUrl %>"><img src="images/icons8-facebook-48.png" class="img-log"></a>
 
         <%
-            String phoneNumber = "772973525"; // Replace with your desired phone number
+            String phoneNumber = "772973525";
             String whatsappLink = "https://api.whatsapp.com/send?phone=" + phoneNumber;
         %>
-        <a href="<%= whatsappLink %>"><img src="images/icons8-whatsapp-48.png"></a>
+        <a href="<%= whatsappLink %>"><img src="images/icons8-whatsapp-48.png" class="img-log"></a>
 
         <%
             String dynamic_Url = "https://www.instagram.com/moonstone_fashion_gallery/";
         %>
-        <a href="<%= dynamic_Url %>"><img src="images/icons8-instagram-48.png"></a>
+        <a href="<%= dynamic_Url %>"><img src="images/icons8-instagram-48.png" class="img-log"></a>
     </div>
 </div>
 </body>
