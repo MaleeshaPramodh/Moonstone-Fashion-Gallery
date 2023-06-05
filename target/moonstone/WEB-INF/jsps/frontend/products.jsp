@@ -38,7 +38,7 @@
           </div>
           <div class="product-det-right">
             <div class="product-det-right-top"><span class="qty-label">Qty : </span><span class="qty">12</span>&nbsp;&nbsp;</div>
-            <div class="product-det-right-bottom"><button class="sell-btn"><a href="viewproduct">Sell</a></button></div>
+            <div class="product-det-right-bottom"><button class="sell-btn"><a href="viewproduct" style="text-decoration: none; color: white;">Sell</a></button></div>
           </div>
         </div>
       </div>

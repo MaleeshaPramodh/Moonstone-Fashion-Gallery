@@ -12,7 +12,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
     var totalWidth = imageWidth * numImages;
 
-    container.style.width = totalWidth + 'px';
 });
 
 
