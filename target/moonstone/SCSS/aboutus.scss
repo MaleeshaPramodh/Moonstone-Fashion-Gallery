@@ -12,25 +12,28 @@
 .body{
   margin-top: 20vh;
   width: 100%;
-  .image-container {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-  }
+  .img-div {
 
-  .img {
-    display: inline-block;
-    height: 200px;
-    animation: scrollImages 30s linear infinite;
-  }
-
-  @keyframes scrollImages {
-    0% {
-      transform: translateX(0);
+    .image-container {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
     }
 
-    100% {
-      transform: translateX(-404%);
+    .img {
+      display: inline-block;
+      height: 200px;
+      animation: scrollImages 30s linear infinite;
+    }
+
+    @keyframes scrollImages {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-404%);
+      }
     }
   }
   .div {

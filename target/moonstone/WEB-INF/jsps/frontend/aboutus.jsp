@@ -34,13 +34,14 @@
 </head>
 <body>
 <div class="body" id="body">
-
+<div class="img-div">
     <div class="image-container">
         <img src="images/4704fbe9-2352-47ec-a9ee-880dbfedbff5.jpg" alt="Image 1" class="img">
         <img src="images/nyfwsketches-1567608885.jpg" alt="Image 2" class="img">
         <img src="images/elle-nyfw-inspiration-1504635147.jpg" alt="Image 3" class="img">
         <img src="images/nyfwsketches-1567608885.jpg" alt="Image 4" class="img">
     </div>
+</div>
 <div class="div">
     <div class="div1">
     <h1 class="h1">About Us</h1>

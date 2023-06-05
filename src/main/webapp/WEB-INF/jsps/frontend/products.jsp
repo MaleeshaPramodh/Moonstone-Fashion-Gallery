@@ -38,12 +38,12 @@
           </div>
           <div class="product-det-right">
             <div class="product-det-right-top"><span class="qty-label">Qty : </span><span class="qty">12</span>&nbsp;&nbsp;</div>
-            <div class="product-det-right-bottom"><button class="sell-btn">Sell</button></div>
+            <div class="product-det-right-bottom"><button class="sell-btn"><a href="viewproduct">Sell</a></button></div>
           </div>
         </div>
       </div>
       <div class="product">
-        <div class="product-img" style="  background-image: url('images/plant7.jpg');
+        <div class="product-img" style="
                              background-size: cover;
                              background-position: center;
                              background-repeat: no-repeat;">
