@@ -26,6 +26,7 @@ public class RouteConfig extends RoutesFilter {
 
                 .add(new AdminHomeController())
                 .add(new AdminUserControl())
+                .add(new ProductManageController())
                 .build();
     }
 }
