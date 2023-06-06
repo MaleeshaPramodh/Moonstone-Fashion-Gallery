@@ -23,6 +23,9 @@ public class RouteConfig extends RoutesFilter {
                 .add(new GalleryController())
                 .add(new AboutUsController())
                 .add(new ViewProductController())
+
+                .add(new AdminHomeController())
+                .add(new AdminUserControl())
                 .build();
     }
 }

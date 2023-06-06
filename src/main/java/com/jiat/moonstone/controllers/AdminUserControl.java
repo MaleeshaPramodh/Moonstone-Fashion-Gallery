@@ -6,11 +6,10 @@ import org.baswell.routes.Routes;
 import javax.servlet.http.HttpServletRequest;
 
 @Routes
-public class AboutUsController {
-
-    @Route("/aboutus")
+public class AdminUserControl {
+    @Route("/usercontrol")
     public String index(HttpServletRequest request){
-        System.out.println("about us");
-        return "frontend/aboutus.jsp";
+        System.out.println("user control");
+        return "adminpanel/usercontrol.jsp";
     }
 }

@@ -1,7 +1,6 @@
 $primary-color: #4286f4;
-$sidebar-width: 200px;
+$sidebar-width: 500px;
 
-/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -14,7 +13,6 @@ body {
   height: 100vh;
 }
 
-/* Header */
 .header {
   background-color: $primary-color;
   color: #fff;
@@ -24,39 +22,60 @@ body {
 .header h1 {
   margin: 0;
 }
-
-/* Sidebar */
+.img-div{
+  height: 500px;
+  width: 600px;
+}
+.img{
+  height: 100%;
+  width: 100%;
+}
 .sidebar {
-  background-color: #f1f1f1;
   width: $sidebar-width;
   padding: 20px;
+  margin-left: 50%;
+  margin-top: -25%;
+  z-index: 1;
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  li:hover{
+    background-color: #0eefdf;
+  }
+  a {
+    text-decoration: none;
+    color: #333;
+  }
 }
 
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 10px;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* Content */
 .content {
   flex-grow: 1;
-  padding: 20px;
+  padding: 25px;
+  margin-top: -25%;
+  margin-left: 50%;
+  font-size: 20px;
+  font-family: "Bagdoll Display";
 }
 
 .content h2 {
   margin-top: 0;
 }
 
-/* Footer */
 .footer {
   background-color: #333;
   color: #fff;
