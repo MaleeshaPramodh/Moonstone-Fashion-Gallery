@@ -10,6 +10,6 @@ public class ProductManageController {
     @Route("/productmanage")
     public String index(HttpServletRequest request){
         System.out.println("product manage");
-        return "WEB-INF/jsps/adminpanel/productmanage.jsp";
+        return "adminpanel/productmanage.jsp";
     }
 }

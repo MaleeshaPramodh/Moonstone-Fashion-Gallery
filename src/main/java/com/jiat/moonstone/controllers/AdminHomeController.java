@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @Routes
 public class AdminHomeController {
-    @Route("/adminhome")
+    @Route("/admin")
     public String index(HttpServletRequest request){
         System.out.println("admin home");
         return "adminpanel/adminhome.jsp";

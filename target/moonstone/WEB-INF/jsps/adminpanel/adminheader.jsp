@@ -20,7 +20,7 @@
     <table>
         <tr>
             <td class="col1">
-                <a class="back" href="/moonstone/adminhome">
+                <a class="back" href="/moonstone/admin">
                     <div class="div-logo"><img style="display: flex;" class="img-logo" src="images/—Pngtree—.png">&nbsp;&nbsp;
                         <h1 class="logo-name">Admin Panel</h1>
                     </div>
@@ -40,7 +40,7 @@
                     <a class="menu" href="">
                         <span class="s1">Gallery</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </a>
-                    <a class="menu" href="">
+                    <a class="menu" href="/moonstone/productmanage">
                         <span class="s1">Product</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </a>
                 </div>

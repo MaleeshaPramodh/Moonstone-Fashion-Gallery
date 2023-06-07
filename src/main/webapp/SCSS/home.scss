@@ -4,10 +4,9 @@
   box-sizing: border-box;
 }
 .ad-div{
-  width: 60%;
+  width: 100%;
   height: 50vh;
   margin-top: 90px;
-  margin-left: 20%;
   background-color: #000000;
   .ad-img{
     height: 50vh;
@@ -114,9 +113,8 @@
   }
 }
 .video-div2{
-  margin-left: 20%;
   margin-top: 20vh;
-  width: 130vh;
+  width: 100%;
   height: 73.6vh;
   background-color: black;
   .text-div1{
@@ -129,10 +127,9 @@
   }
 }
 .video-div3{
-  margin-left: 20%;
   margin-top: 10vh;
   margin-bottom: 20px;
-  width: 130vh;
+  width: 100%;
   height: 75vh;
   background-color: black;
   .video2{

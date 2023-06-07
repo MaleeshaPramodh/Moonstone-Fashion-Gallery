@@ -25,7 +25,7 @@
         <ul>
             <a href="/moonstone/"><li>Dashboard</li></a>
             <a href="/moonstone/usercontrol"><li>Users</li></a>
-            <a href="#"><li>Products</li></a>
+            <a href="/moonstone/productmanage"><li>Products</li></a>
             <a href="#"><li>Settings</li></a>
         </ul>
     </nav>
