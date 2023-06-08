@@ -11,6 +11,7 @@ import org.hibernate.query.Query;
 
 import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 @Routes
 public class LoginController {
@@ -35,7 +36,9 @@ public class LoginController {
             }else if(user.getEmail_verified_at() == null){
                 return "redirect:/";
             }else {
-                request.getSession().setAttribute("user", user.getId());
+                HttpSession s = request.getSession();
+                s.setAttribute("user", user.getId());
+                s.setAttribute("user_type", user.getUserType());
                 return "redirect:/";
             }
         }catch (NoResultException e){

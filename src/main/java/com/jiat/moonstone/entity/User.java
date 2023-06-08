@@ -20,6 +20,10 @@ public class User extends BaseEntity {
     private String phone;
     private boolean active;
 
+    @Enumerated(value = EnumType.STRING)
+    @Column(name = "user_type")
+    private UserType userType = UserType.USER;
+
     public Long getId() {
         return id;
     }
@@ -106,5 +110,13 @@ public class User extends BaseEntity {
 
     public void setActive(boolean active) {
         this.active = active;
+    }
+
+    public UserType getUserType() {
+        return userType;
+    }
+
+    public void setUserType(UserType userType) {
+        this.userType = userType;
     }
 }

@@ -12,4 +12,9 @@ public class HomeController {
         System.out.println("Home");
         return "frontend/index.jsp";
     }
+
+    @Route(value = "/profile", tags = {"auth","user"})
+    public String profile(HttpServletRequest request) {
+        return "frontend/profile.jsp";
+    }
 }

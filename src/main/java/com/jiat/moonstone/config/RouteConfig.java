@@ -1,6 +1,7 @@
 package com.jiat.moonstone.config;
 
 import com.jiat.moonstone.controllers.*;
+import org.baswell.routes.RoutesConfiguration;
 import org.baswell.routes.RoutesFilter;
 import org.baswell.routes.RoutingTable;
 
@@ -14,7 +15,10 @@ public class RouteConfig extends RoutesFilter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         System.out.println("init...");
-        RoutingTable routing = new RoutingTable();
+
+        RoutesConfiguration configuration = new RoutesConfiguration();
+        configuration.rootForwardPath = "/WEB-INF/views/";
+        RoutingTable routing = new RoutingTable(configuration);
         routing
                 .add(new HomeController())
                 .add(new LoginController())
