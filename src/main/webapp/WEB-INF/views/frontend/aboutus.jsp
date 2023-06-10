@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>Moonstone Fashion</title>
-    <link type="text/css" rel="stylesheet" href="SCSS/css/aboutus.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/SCSS/css/aboutus.css"/>
 </head>
 <body>
 <div class="body" id="body">

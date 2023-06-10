@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Moonstone Fashion</title>
-    <link type="text/css" rel="stylesheet" href="SCSS/css/viewproduct.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/SCSS/css/viewproduct.css"/>
     <link rel="shortcut icon" href="images/—Pngtree—.png"/>
 </head>
 <body>

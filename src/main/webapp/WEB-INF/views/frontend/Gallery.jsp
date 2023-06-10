@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>Moonstone Fashion</title>
-    <link type="text/css" rel="stylesheet" href="SCSS/css/gallery.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/SCSS/css/gallery.css"/>
     <style>
         .image-container {
             display: inline-block;
