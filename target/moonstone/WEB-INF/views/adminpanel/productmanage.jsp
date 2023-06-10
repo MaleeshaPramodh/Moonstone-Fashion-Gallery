@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>Moonstone Fashion</title>
-    <link type="text/css" rel="stylesheet" href="SCSS/css/productmanage.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/SCSS/css/productmanage.css"/>
 </head>
 <body>
 <div class="container">
@@ -109,6 +109,6 @@
     </div>
 
 </div>
-<script src="JS/productmanage.js"></script>
+<script src="assets/JS/productmanage.js"></script>
 </body>
 </html>

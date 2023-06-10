@@ -9,24 +9,24 @@
 <html>
 <head>
     <title>Moonstone Fashion</title>
-    <link type="text/css" rel="stylesheet" href="SCSS/css/login.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/SCSS/css/login.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;600&family=Ranchers&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/—Pngtree—.png"/>
+    <link rel="shortcut icon" href="assets/images/—Pngtree—.png"/>
 </head>
 <body>
 <div class="box-outer">
     <div class="box-body-inner">
-        <div class="close"><a href="/moonstone"><img src="images/icons8-close-16.png"></a></div>
+        <div class="close"><a href="/moonstone"><img src="assets/images/icons8-close-16.png"></a></div>
         <div class="head-1">
             <h1 class="login-head">Get Signed In </h1>
         </div>
         <div class="inner">
             <div class="image-div">
-                <img style="height: 100%; width: 100%;" src="images/download%20(1).png" alt="">
+                <img style="height: 100%; width: 100%;" src="assets/images/download%20(1).png" alt="">
             </div>
             <form id="login" class="data-input-form" method="post"  action="doLogin.php">
                 <br/>
@@ -47,6 +47,6 @@
         </div>
     </div>
 </div>
-<script  type="text/javascript" src="JS/login.js"></script>
+<script  type="text/javascript" src="assets/JS/login.js"></script>
 </body>
 </html>

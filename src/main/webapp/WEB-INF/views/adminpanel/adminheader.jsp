@@ -9,11 +9,11 @@
 <html>
 <head>
     <title></title>
-    <link type="text/css" rel="stylesheet" href="SCSS/css/adminheader.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/SCSS/css/adminheader.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/—Pngtree—.png"/>
+    <link rel="shortcut icon" href="assets/images/—Pngtree—.png"/>
 </head>
 <body>
 <div id="nav-div" class="nav-div">
@@ -21,7 +21,7 @@
         <tr>
             <td class="col1">
                 <a class="back" href="/moonstone/admin">
-                    <div class="div-logo"><img style="display: flex;" class="img-logo" src="images/—Pngtree—.png">&nbsp;&nbsp;
+                    <div class="div-logo"><img style="display: flex;" class="img-logo" src="assets/images/—Pngtree—.png">&nbsp;&nbsp;
                         <h1 class="logo-name">Admin Panel</h1>
                     </div>
                 </a>

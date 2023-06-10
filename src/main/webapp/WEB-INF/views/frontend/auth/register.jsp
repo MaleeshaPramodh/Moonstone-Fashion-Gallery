@@ -15,18 +15,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;600&family=Ranchers&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/—Pngtree—.png"/>
+    <link rel="shortcut icon" href="assets/images/—Pngtree—.png"/>
 </head>
 <body>
 <div class="box-outer">
     <div class="box-body-inner">
-        <div class="close" style="position: absolute;"><a href="/moonstone"><img src="images/icons8-close-16.png"></a></div>
+        <div class="close" style="position: absolute;"><a href="/moonstone"><img src="assets/images/icons8-close-16.png"></a></div>
         <div class="head-1">
             <h1 class="login-head">Get Signed Up</h1>
         </div>
         <div class="inner">
             <div class="image-div">
-                <img style="height: 100%; width: 100%;" src="images/download%20(1).png" alt="">
+                <img style="height: 100%; width: 100%;" src="assets/images/download%20(1).png" alt="">
             </div>
             <c:if test="${not empty sessionScope.error}">
                 <span style="color: red">${sessionScope.error}</span>
@@ -53,6 +53,6 @@
         </div>
     </div>
 </div>
-<script  type="text/javascript" src="JS/login.js"></script>
+<script  type="text/javascript" src="assets/JS/login.js"></script>
 </body>
 </html>

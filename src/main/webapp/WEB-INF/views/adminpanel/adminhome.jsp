@@ -9,8 +9,8 @@
 <html>
 <head>
     <title>Moonstone Fashion</title>
-    <link type="text/css" rel="stylesheet" href="SCSS/css/adminhome.css"/>
-    <link rel="shortcut icon" href="images/—Pngtree—.png"/>
+    <link type="text/css" rel="stylesheet" href="assets/SCSS/css/adminhome.css"/>
+    <link rel="shortcut icon" href="assets/images/—Pngtree—.png"/>
 </head>
 <body>
 <div class="container">
@@ -18,7 +18,7 @@
         <h1>Admin Panel</h1>
     </header>
     <div class="img-div">
-        <img src="images/download%20(1).png" class="img"/>
+        <img src="assets/images/download%20(1).png" class="img"/>
     </div>
 
     <nav class="sidebar">
