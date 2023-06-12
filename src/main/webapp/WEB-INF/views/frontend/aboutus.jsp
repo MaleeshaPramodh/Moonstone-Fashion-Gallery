@@ -16,6 +16,12 @@
     </layout:put>
     <layout:put block="index" type="REPLACE">
     <div class="body" id="body">
+        <div class="up-div">
+            <div class="up-name">
+                <h1>Moonstone Fashion</h1>
+            </div>
+            <img src="assets/images/online-fashion-shopping-with-laptop%20(2).jpg" class="up-img">
+        </div>
     <div class="img-div">
         <div class="image-container">
             <img src="assets/images/4704fbe9-2352-47ec-a9ee-880dbfedbff5.jpg" alt="Image 1" class="img">

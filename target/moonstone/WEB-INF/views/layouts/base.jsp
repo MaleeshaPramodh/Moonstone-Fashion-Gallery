@@ -62,7 +62,7 @@
                             <span class="s1">Gallery</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </a>
                         <a id="products" class="menu" href="/moonstone/products">
-                            <span class="s1">Products</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="s1">Shop</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </a>
                         <a class="menu" href="/moonstone/aboutus">
                             <span class="s1">About Us</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -112,6 +112,20 @@
 
 </layout:block>
 <footer class="ft">
+    <div>
+        <h1>Moonstone Fashion</h1>
+    </div>
+    <div class="contact">
+        <div>
+            <h3>Facebook</h3>
+            <h3>WhatsApp</h3>
+            <h3>Instagram</h3>
+        </div>
+        <div>
+            <h3>+94772973525</h3>
+            <h3>moonstonefashiongallery@gmail.com</h3>
+        </div>
+    </div>
     <p>&copy; 2023 Moonstone Fashion Gallery All rights reserved. Unauthorized use of these photos and video, copying,
         publishing and distribution is prohibited.</p>
 </footer>
@@ -122,5 +136,6 @@
 <script src="assets/JS/gallery.js"></script>
 <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
 <script src="assets/JS/viewproduct.js"></script>
+<script src="assets/JS/footer.js"></script>
 </body>
 </html>

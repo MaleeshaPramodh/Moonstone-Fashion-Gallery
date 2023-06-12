@@ -15,10 +15,17 @@
         <link type="text/css" rel="stylesheet" href="assets/SCSS/css/home.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap"
+              rel="stylesheet">
     </layout:put>
     <layout:put block="index" type="REPLACE">
         <div class="body" id="body">
+            <div class="up-div">
+                <div class="up-name">
+                    <h1>Moonstone Fashion</h1>
+                </div>
+                <img src="assets/images/online-fashion-shopping-with-computer.jpg" class="up-img">
+            </div>
             <div class="div-body1">
                 <div class="ad-div"><img src="assets/images/images%20(4).jpeg" class="ad-img"></div>
                 <div class="div1-bdy">
@@ -50,12 +57,13 @@
                 <div class="video-div">
                     <video width="640" height="480" src="assets/videos/fashion.mp4" class="video" autoplay loop muted/>
                 </div>
-<%--                <img src="assets/images/depositphotos_22619283-stock-photo-shopping-woman.jpg" class="img2">--%>
+
                 <div class="phar">&nbsp;
                     <div class="para-text">
                         <p class="p">
-                            The extraordinary designs, brightness & eye catching colors of our Exclusive Moonstone Hand painted
-                            Bathik clothing will always makes you shine!
+                            The extraordinary designs, brightness & eye catching colors of our Exclusive Moonstone Hand
+                            painted
+                            Batik clothing will always makes you shine!
                         </p>
                         <p class="p">
                             Very Limited Edition Only !
@@ -64,29 +72,41 @@
                         <p class="p1">
                             Sizes Available: XS | S | M | L | XL | XXL
                         </p>
-                        <img src="assets/images/icons8-whatsapp-48.png" class="whatsapp">
-                        <p class="p2"> 0772973525</p>
+                        <a style="text-decoration: none;" href="/moonstone/products"><button class="buy-now">Shop Now</button></a>
                     </div>
                 </div>
             </div>
             <div>
                 <div class="ad-div2">
-                    <img src="assets/images/1.jpg" class="ad-img2">
-                    <img src="assets/images/WhatsApp%20Image%202023-05-27%20at%2018.51.21.jpg" class="ad-img2">
-                    <img src="assets/images/3.jpg" class="ad-img2">
+                    <h1>OUT LOOK</h1>
+                    <div class="img-line">
+                        <img src="assets/images/1.jpg" class="ad-img2">
+                        <img src="assets/images/WhatsApp%20Image%202023-05-27%20at%2018.51.21.jpg" class="ad-img2">
+                        <img src="assets/images/3.jpg" class="ad-img2">
+                    </div>
+
                 </div>
             </div>
 
-            <div class="div-body1">
-                <div class="video-div2">
-                    <div class="text-div1"><h1>New Fashion !</h1></div>
-                    <video width="250" height="480" src="assets/videos/Facebook%20video%202813637768773544.mp4" style="margin-top: -2vh;"
-                           autoplay loop muted/>
-                </div>
+            <div class="div-body2">
                 <div class="video-div3">
-                    <div class="text-div"><h1>Limited Edition !</h1></div>
-                    <video width="250" height="480" src="assets/videos/Facebook%20video%20651517226781342.mp4" class="video2" autoplay loop
-                           muted/>
+                    <div class="text-div">
+                        <h1>Limited Edition !</h1>
+                    </div>
+                    <div class="v2">
+                        <video class="v1-video" src="assets/videos/Facebook%20video%20651517226781342.mp4"
+                               class="video2" autoplay loop
+                               muted/>
+                    </div>
+                </div>
+                <div class="video-div2">
+                    <div class="text-div1">
+                        <h1>New Fashion !</h1>
+                    </div>
+                    <div class="v1">
+                        <video class="v1-video" src="assets/videos/Facebook%20video%202813637768773544.mp4"
+                               autoplay loop muted/>
+                    </div>
                 </div>
             </div>
 

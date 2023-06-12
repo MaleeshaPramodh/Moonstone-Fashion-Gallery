@@ -16,6 +16,15 @@
     </layout:put>
     <layout:put block="index" type="REPLACE">
         <div id="body">
+            <div class="up-div">
+                <div class="up-name">
+                    <h1>Moonstone Fashion</h1>
+                </div>
+                <div class="up-name1">
+                    <h1>Buy Your Products</h1>
+                </div>
+                <img src="assets/images/online-fashion-shopping-with-laptop%20(3).jpg" class="up-img">
+            </div>
             <section class="section2" style="margin-top: 20vh;">
                 <div class="section-2-div-top-search">
                     <form method="post" action="#" class="product-search-form">
