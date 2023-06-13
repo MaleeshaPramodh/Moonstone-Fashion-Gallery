@@ -53,7 +53,7 @@
                     <button class="increase">+</button>
                 </div>
                 <p class="price">Rs.3500.00</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <a href="/moonstone/checkout" style="text-decoration: none;"><button class="add-to-cart">Add to Cart</button></a>
             </div>
         </div>
 

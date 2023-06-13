@@ -12,4 +12,16 @@ public class AdminHomeController {
         System.out.println("admin home");
         return "adminpanel/adminhome.jsp";
     }
+
+    @Route("/usercontrol")
+    public String usercontrol(HttpServletRequest request){
+        System.out.println("user control");
+        return "adminpanel/usercontrol.jsp";
+    }
+
+    @Route("/productmanage")
+    public String productmanage(HttpServletRequest request){
+        System.out.println("product manage");
+        return "adminpanel/productmanage.jsp";
+    }
 }

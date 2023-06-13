@@ -28,14 +28,8 @@ public class RouteConfig extends RoutesFilter {
                 .add(new LoginController())
                 .add(new RegisterController())
                 .add(new EmailVerifyController())
-                .add(new ProductsController())
-                .add(new GalleryController())
-                .add(new AboutUsController())
-                .add(new ViewProductController())
 
                 .add(new AdminHomeController())
-                .add(new AdminUserControl())
-                .add(new ProductManageController())
                 .build();
     }
 }

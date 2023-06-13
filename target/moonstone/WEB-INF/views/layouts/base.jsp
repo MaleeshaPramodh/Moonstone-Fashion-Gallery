@@ -37,6 +37,8 @@
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/profile.css"/>
     <layout:block name="stylecss"></layout:block>
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/viewproduct.css"/>
+    <layout:block name="stylecss"></layout:block>
+    <link type="text/css" rel="stylesheet" href="assets/SCSS/css/checkout.css"/>
 
 
 </head>
@@ -109,6 +111,9 @@
 
 </layout:block>
 <layout:block name="viewproduct">
+
+</layout:block>
+<layout:block name="checkout">
 
 </layout:block>
 <footer class="ft">

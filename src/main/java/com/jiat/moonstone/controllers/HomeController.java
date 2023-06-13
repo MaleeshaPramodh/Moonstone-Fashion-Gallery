@@ -17,4 +17,35 @@ public class HomeController {
     public String profile(HttpServletRequest request) {
         return "frontend/profile.jsp";
     }
+
+    @Route("/gallery")
+    public String gallery(HttpServletRequest request){
+        System.out.println("gallery");
+        return "frontend/Gallery.jsp";
+    }
+
+    @Route("/products")
+    public String products(HttpServletRequest request){
+        System.out.println("product");
+        return "frontend/products.jsp";
+    }
+
+    @Route("/viewproduct")
+    public String viewproduct(HttpServletRequest request){
+        System.out.println("viewproduct");
+        return "frontend/viewproduct.jsp";
+    }
+
+    @Route("/aboutus")
+    public String aboutus(HttpServletRequest request){
+        System.out.println("about us");
+        return "frontend/aboutus.jsp";
+    }
+
+    @Route("/checkout")
+    public String checkout(HttpServletRequest request){
+        System.out.println("about us");
+        return "frontend/checkout.jsp";
+    }
+
 }
