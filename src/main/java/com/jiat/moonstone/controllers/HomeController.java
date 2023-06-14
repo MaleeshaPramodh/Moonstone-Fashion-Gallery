@@ -42,10 +42,15 @@ public class HomeController {
         return "frontend/aboutus.jsp";
     }
 
-    @Route("/checkout")
-    public String checkout(HttpServletRequest request){
-        System.out.println("about us");
-        return "frontend/checkout.jsp";
+    @Route("/cart")
+    public String cart(HttpServletRequest request){
+        System.out.println("cart");
+        return "frontend/cart.jsp";
     }
 
+    @Route("/checkout")
+    public String checkout(HttpServletRequest request){
+        System.out.println("checkout");
+        return "frontend/checkout.jsp";
+    }
 }

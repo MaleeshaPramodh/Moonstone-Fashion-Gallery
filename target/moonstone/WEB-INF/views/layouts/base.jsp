@@ -38,6 +38,8 @@
     <layout:block name="stylecss"></layout:block>
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/viewproduct.css"/>
     <layout:block name="stylecss"></layout:block>
+    <link type="text/css" rel="stylesheet" href="assets/SCSS/css/cart.css"/>
+    <layout:block name="stylecss"></layout:block>
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/checkout.css"/>
 
 
@@ -113,6 +115,9 @@
 <layout:block name="viewproduct">
 
 </layout:block>
+<layout:block name="cart">
+
+</layout:block>
 <layout:block name="checkout">
 
 </layout:block>
@@ -141,6 +146,7 @@
 <script src="assets/JS/gallery.js"></script>
 <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
 <script src="assets/JS/viewproduct.js"></script>
+<script src="assets/JS/cart.js"></script>
 <script src="assets/JS/footer.js"></script>
 </body>
 </html>

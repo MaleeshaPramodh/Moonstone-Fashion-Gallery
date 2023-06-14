@@ -1,0 +1,136 @@
+.cart {
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+
+  #cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #f8f8f8;
+      margin-bottom: 10px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #f2f2f2;
+      }
+
+      img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+
+      .item-info {
+        flex: 1;
+
+        h3 {
+          margin: 0;
+          font-size: 16px;
+          color: #333;
+        }
+
+        p {
+          margin: 0;
+          font-size: 14px;
+          color: #777;
+        }
+      }
+
+      .item-quantity {
+        display: flex;
+        align-items: center;
+
+        input {
+          width: 40px;
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          text-align: center;
+          font-size: 14px;
+          color: #333;
+        }
+
+        button {
+          padding: 5px;
+          margin-left: 5px;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #f00;
+          }
+        }
+      }
+
+      .remove-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #f00;
+        }
+      }
+    }
+  }
+
+  #cart-summary {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    #total-items,
+    #total-price {
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    #total-price {
+      font-weight: bold;
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+
+    button {
+      padding: 10px 20px;
+      background-color: #008000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #006400;
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@
 <%@ taglib uri="http://kwonnam.pe.kr/jsp/template-inheritance" prefix="layout" %>
 
 <layout:extends name="base">
-    <layout:put block="stylecss" type="REPLACE">
+    <layout:put block="profilecss" type="REPLACE">
         <title>Moonstone Fashion</title>
         <link type="text/css" rel="stylesheet" href="assets/SCSS/css/profile.css"/>
     </layout:put>
