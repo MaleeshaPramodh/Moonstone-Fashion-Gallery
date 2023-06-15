@@ -10,22 +10,143 @@
 <head>
     <title>Moonstone Fashion</title>
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/cart.css"/>
+    <link rel="shortcut icon" href="assets/images/—Pngtree—.png"/>
 </head>
 
-<body>
-<div class="cart">
-    <h2>Shopping Cart</h2>
-    <ul id="cart-items">
-        <!-- Cart items will be dynamically added here -->
-    </ul>
-    <div id="cart-summary">
-        <div id="total-items"></div>
-        <div id="total-price"></div>
+<body class="boody">
+<header id="site-header">
+    <div class="container">
+        <h1>Shopping cart</h1>
     </div>
-    <div class="actions">
-        <button id="checkout-btn">Checkout</button>
-    </div>
+</header>
+
+<div class="container">
+
+    <section id="cart">
+        <article class="product">
+            <header>
+                <a class="remove">
+                    <img src="http://www.astudio.si/preview/blockedwp/wp-content/uploads/2012/08/1.jpg" alt="">
+
+                    <h3>Remove product</h3>
+                </a>
+            </header>
+
+            <div class="content">
+
+                <h1>Product name</h1>
+
+                This is description.
+
+                <div title="You have selected this product to be shipped in the color yellow." style="top: 0" class="color yellow"></div>
+                <div style="top: 43px" class="type small">XXL</div>
+            </div>
+
+            <footer class="content">
+                <span class="qt-minus">-</span>
+                <span class="qt">2</span>
+                <span class="qt-plus">+</span>
+
+                <h2 class="full-price">
+                    Rs.29.98
+                </h2>
+
+                <h2 class="price">
+                    Rs.14.99
+                </h2>
+            </footer>
+        </article>
+
+        <article class="product">
+            <header>
+                <a class="remove">
+                    <img src="http://www.astudio.si/preview/blockedwp/wp-content/uploads/2012/08/3.jpg" alt="">
+
+                    <h3>Remove product</h3>
+                </a>
+            </header>
+
+            <div class="content">
+
+                <h1>Product name</h1>
+
+                This is description.
+
+                <div title="You have selected this product to be shipped in the color red." style="top: 0" class="color red"></div>
+                <div title="You have selected this product to be shipped sized Small."  style="top: 43px" class="type small">Small</div>
+            </div>
+
+            <footer class="content">
+
+                <span class="qt-minus">-</span>
+                <span class="qt">1</span>
+                <span class="qt-plus">+</span>
+
+                <h2 class="full-price">
+                    Rs.79.99
+                </h2>
+
+                <h2 class="price">
+                    Rs.79.99
+                </h2>
+            </footer>
+        </article>
+
+        <article class="product">
+            <header>
+                <a class="remove">
+                    <img src="http://www.astudio.si/preview/blockedwp/wp-content/uploads/2012/08/5.jpg" alt="">
+
+                    <h3>Remove product</h3>
+                </a>
+            </header>
+
+            <div class="content">
+
+                <h1>Product name</h1>
+
+                This is description.
+
+                <div title="You have selected this product to be shipped in the color blue." style="top: 0" class="color blue"></div>
+                <div style="top: 43px" class="type small">Large</div>
+            </div>
+
+            <footer class="content">
+
+                <span class="qt-minus">-</span>
+                <span class="qt">3</span>
+                <span class="qt-plus">+</span>
+
+                <h2 class="full-price">
+                    Rs.53.99
+                </h2>
+
+                <h2 class="price">
+                    Rs.17.99
+                </h2>
+            </footer>
+        </article>
+
+    </section>
+
 </div>
+
+<footer id="site-footer">
+    <div class="container clearfix">
+
+        <div class="left">
+            <h2 class="subtotal">Subtotal: Rs.<span>163.96</span></h2>
+            <h3 class="tax">Taxes (5%): Rs.<span>8.2</span></h3>
+            <h3 class="shipping">Shipping: Rs.<span>5.00</span></h3>
+        </div>
+
+        <div class="right">
+            <h1 class="total">Total: Rs.<span>177.16</span></h1>
+            <a class="btn">Checkout</a>
+        </div>
+
+    </div>
+</footer>
 <script src="assets/JS/cart.js"></script>
 </body>
 </html>

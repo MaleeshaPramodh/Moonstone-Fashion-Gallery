@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: ADMIN
+  User: MALEESHA
   Date: 6/8/2023
   Time: 2:41 PM
   To change this template use File | Settings | File Templates.
@@ -39,8 +39,6 @@
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/viewproduct.css"/>
     <layout:block name="stylecss"></layout:block>
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/cart.css"/>
-    <layout:block name="stylecss"></layout:block>
-    <link type="text/css" rel="stylesheet" href="assets/SCSS/css/checkout.css"/>
 
 
 </head>
@@ -113,12 +111,6 @@
 
 </layout:block>
 <layout:block name="viewproduct">
-
-</layout:block>
-<layout:block name="cart">
-
-</layout:block>
-<layout:block name="checkout">
 
 </layout:block>
 <footer class="ft">
