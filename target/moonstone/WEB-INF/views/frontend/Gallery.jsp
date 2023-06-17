@@ -14,6 +14,7 @@
     <layout:put block="stylecss" type="REPLACE">
         <title>Moonstone Fashion</title>
         <link type="text/css" rel="stylesheet" href="assets/SCSS/css/gallery.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </layout:put>
     <layout:put block="index" type="REPLACE">
         <div class="body" id="body">
@@ -33,24 +34,24 @@
             </div>
 
             <div class="full-div" class="image-container">
-                <div class="img-div"><img src="assets/images/9.jpg" class="gallery-img" onclick="extractImage(this)">
+                <div data-aos="zoom-out" class="img-div"><img src="assets/images/9.jpg" class="gallery-img" onclick="extractImage(this)">
                 </div>
-                <div class="img-div"><img src="assets/images/4.jpg" class="gallery-img" onclick="extractImage(this)">
+                <div data-aos="zoom-out" class="img-div"><img src="assets/images/4.jpg" class="gallery-img" onclick="extractImage(this)">
                 </div>
-                <div class="img-div"><img src="assets/images/10.jpg" class="gallery-img" onclick="extractImage(this)">
+                <div data-aos="zoom-out" class="img-div"><img src="assets/images/10.jpg" class="gallery-img" onclick="extractImage(this)">
                 </div>
-                <div class="img-div"><img src="assets/images/2.jpg" class="gallery-img" onclick="extractImage(this)">
+                <div data-aos="zoom-out" class="img-div"><img src="assets/images/2.jpg" class="gallery-img" onclick="extractImage(this)">
                 </div>
             </div>
 
             <div class="full-div" class="image-container">
-                <div class="img-div"><img src="assets/images/8.jpg" class="gallery-img" onclick="extractImage(this)">
+                <div data-aos="zoom-out" class="img-div"><img src="assets/images/8.jpg" class="gallery-img" onclick="extractImage(this)">
                 </div>
-                <div class="img-div"><img src="assets/images/7.jpg" class="gallery-img" onclick="extractImage(this)">
+                <div data-aos="zoom-out" class="img-div"><img src="assets/images/7.jpg" class="gallery-img" onclick="extractImage(this)">
                 </div>
-                <div class="img-div"><img src="assets/images/6.jpg" class="gallery-img" onclick="extractImage(this)">
+                <div data-aos="zoom-out" class="img-div"><img src="assets/images/6.jpg" class="gallery-img" onclick="extractImage(this)">
                 </div>
-                <div class="img-div"><img src="assets/images/5.jpg" class="gallery-img" onclick="extractImage(this)">
+                <div data-aos="zoom-out" class="img-div"><img src="assets/images/5.jpg" class="gallery-img" onclick="extractImage(this)">
                 </div>
             </div>
 
