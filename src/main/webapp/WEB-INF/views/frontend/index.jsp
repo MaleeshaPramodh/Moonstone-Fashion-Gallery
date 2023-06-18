@@ -15,13 +15,14 @@
         <link type="text/css" rel="stylesheet" href="assets/SCSS/css/home.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap"
               rel="stylesheet">
     </layout:put>
     <layout:put block="index" type="REPLACE">
         <div class="body" id="body">
             <div class="up-div">
-                <div class="up-name">
+                <div data-aos="zoom-in" class="up-name">
                     <h1>Moonstone Fashion</h1>
                 </div>
                 <img src="assets/images/online-fashion-shopping-with-computer.jpg" class="up-img">

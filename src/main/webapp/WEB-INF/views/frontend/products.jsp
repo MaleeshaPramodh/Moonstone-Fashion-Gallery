@@ -13,14 +13,15 @@
     <layout:put block="stylecss" type="REPLACE">
         <title>Moonstone Fashion</title>
         <link type="text/css" rel="stylesheet" href="assets/SCSS/products.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </layout:put>
     <layout:put block="index" type="REPLACE">
         <div id="body">
             <div class="up-div">
-                <div class="up-name">
+                <div data-aos="zoom-in" class="up-name">
                     <h1>Moonstone Fashion</h1>
                 </div>
-                <div class="up-name1">
+                <div data-aos="fade-down" class="up-name1">
                     <h1>Buy Your Products</h1>
                 </div>
                 <img src="assets/images/online-fashion-shopping-with-laptop%20(3).jpg" class="up-img">

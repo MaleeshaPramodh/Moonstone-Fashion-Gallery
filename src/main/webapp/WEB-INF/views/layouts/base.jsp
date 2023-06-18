@@ -139,6 +139,7 @@
 <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
 <script src="assets/JS/viewproduct.js"></script>
 <script src="assets/JS/cart.js"></script>
+<script src="assets/JS/profile.js"></script>
 <script src="assets/JS/footer.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>

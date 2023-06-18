@@ -19,10 +19,10 @@
     <layout:put block="index" type="REPLACE">
         <div class="body" id="body">
             <div class="up-div">
-                <div class="up-name">
+                <div data-aos="zoom-in" class="up-name">
                     <h1>Moonstone Fashion</h1>
                 </div>
-                <div class="up-name1">
+                <div data-aos="fade-down" class="up-name1">
                     <h1>Gallery</h1>
                 </div>
                 <img src="assets/images/online-fashion-shopping-with-laptop.jpg" class="up-img">

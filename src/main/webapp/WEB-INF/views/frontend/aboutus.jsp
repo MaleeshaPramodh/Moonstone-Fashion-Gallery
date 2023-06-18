@@ -13,11 +13,12 @@
     <layout:put block="aboutuscss" type="REPLACE">
         <title>Moonstone Fashion</title>
         <link type="text/css" rel="stylesheet" href="assets/SCSS/css/aboutus.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </layout:put>
     <layout:put block="index" type="REPLACE">
     <div class="body" id="body">
         <div class="up-div">
-            <div class="up-name">
+            <div data-aos="zoom-in" class="up-name">
                 <h1>Moonstone Fashion</h1>
             </div>
             <img src="assets/images/online-fashion-shopping-with-laptop%20(2).jpg" class="up-img">
