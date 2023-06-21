@@ -36,8 +36,8 @@
                 </div>
                 <div class="section-2-product-list">
                     <div class="product-row1">
-                        <div class="product">
-                            <div class="product-img" style="
+                        <div class="pro">
+                            <div class="pro-img" style="
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;">
@@ -63,8 +63,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="product-img" style="
+                        <div class="pro">
+                            <div class="pro-img" style="
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;">
@@ -74,8 +74,8 @@
 
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="product-img" style=" background-image: url('images/plant4.jpg');
+                        <div class="pro">
+                            <div class="pro-img" style=" background-image: url('images/plant4.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;">
@@ -85,8 +85,8 @@
 
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="product-img" style="
+                        <div class="pro">
+                            <div class="pro-img" style="
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;">
@@ -99,10 +99,10 @@
                         </div>
                     </div>
                     <div class="product-row1">
-                        <div class="product"></div>
-                        <div class="product"></div>
-                        <div class="product"></div>
-                        <div class="product"></div>
+                        <div class="pro"></div>
+                        <div class="pro"></div>
+                        <div class="pro"></div>
+                        <div class="pro"></div>
                     </div>
                 </div>
             </section>
