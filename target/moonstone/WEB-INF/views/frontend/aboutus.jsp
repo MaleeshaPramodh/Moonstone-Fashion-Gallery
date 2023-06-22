@@ -10,7 +10,7 @@
 <%@ taglib uri="http://kwonnam.pe.kr/jsp/template-inheritance" prefix="layout" %>
 
 <layout:extends name="base">
-    <layout:put block="aboutuscss" type="REPLACE">
+    <layout:put block="stylecss" type="REPLACE">
         <title>Moonstone Fashion</title>
         <link type="text/css" rel="stylesheet" href="assets/SCSS/css/aboutus.css"/>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />

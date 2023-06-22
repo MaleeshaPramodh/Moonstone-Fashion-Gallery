@@ -28,7 +28,7 @@
             <div class="image-div">
                 <img style="height: 100%; width: 100%;" src="assets/images/download%20(1).png" alt="">
             </div>
-            <form id="login" class="data-input-form" method="post"  action="doLogin.php">
+            <form id="login" class="data-input-form" method="post"  action="/moonstone">
                 <br/>
                 <br/>
                 <br/>

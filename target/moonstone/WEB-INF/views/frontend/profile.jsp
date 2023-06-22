@@ -1,7 +1,7 @@
 <%--<jsp:include page="header.jsp"/>--%>
 <%--
   Created by IntelliJ IDEA.
-  User: ADMIN
+  User: MALEESHA
   Date: 6/8/2023
   Time: 2:43 PM
   To change this template use File | Settings | File Templates.
@@ -37,11 +37,8 @@
                     <button type="submit" class="btn-update-profile">Update</button>
                 </form>
             </div>
-            <div id="app">
-                <div id="hero">
-                    <h1>NEON<br/>CURSOR</h1>
-                    <a target="_blank" href="https://github.com/klevron/threejs-toys">github/threejs-toys</a>
-                </div>
+            <div class="img-div">
+                <img src="assets/images/download%20(1).png" class="img"/>
             </div>
         </div>
 
