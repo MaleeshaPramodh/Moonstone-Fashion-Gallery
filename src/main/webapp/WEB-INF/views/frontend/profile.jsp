@@ -14,7 +14,7 @@
         <link type="text/css" rel="stylesheet" href="assets/SCSS/css/profile.css"/>
     </layout:put>
     <layout:put block="index" type="REPLACE">
-        <div>
+        <div class="p-div">
             <div class="update-profile">
                 <h1 class="update-profile-title">Update Profile</h1>
                 <form class="update-profile-form">
