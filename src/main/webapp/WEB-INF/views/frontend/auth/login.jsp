@@ -33,9 +33,9 @@
                 <br/>
                 <br/>
                 <br/>
-                <input type="text"  class="user-input-field" placeholder="Please Enter Your Username"   name="username"  autocomplete="off" required />
+                <input type="text"  class="user-input-field" placeholder="Please Enter Your Username"   name="name"  autocomplete="off" required />
                 <br/>
-                <input type="password"  class="user-input-field" placeholder="Please Enter Your Password"   name="pswd"   autocomplete="off" required />
+                <input type="password"  class="user-input-field" placeholder="Please Enter Your Password"   name="password"   autocomplete="off" required />
                 <br/>
                 <button type="submit" class="submit-button">Sign In</button>
                 <br/>
