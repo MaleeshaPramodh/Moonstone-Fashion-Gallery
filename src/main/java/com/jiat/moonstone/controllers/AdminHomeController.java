@@ -19,9 +19,4 @@ public class AdminHomeController {
         return "adminpanel/usercontrol.jsp";
     }
 
-    @Route("/productmanage")
-    public String productmanage(HttpServletRequest request){
-        System.out.println("product manage");
-        return "adminpanel/productmanage.jsp";
-    }
 }

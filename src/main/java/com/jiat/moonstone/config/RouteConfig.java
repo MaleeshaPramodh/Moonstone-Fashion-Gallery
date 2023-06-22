@@ -30,6 +30,7 @@ public class RouteConfig extends RoutesFilter {
                 .add(new EmailVerifyController())
 
                 .add(new AdminHomeController())
+                .add(new ProductManageController())
                 .build();
     }
 }

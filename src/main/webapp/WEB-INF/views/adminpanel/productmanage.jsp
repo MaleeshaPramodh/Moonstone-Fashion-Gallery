@@ -17,7 +17,7 @@
     <div class="main-box">
         <h1>Product Control Panel</h1>
 
-        <form class="user-form">
+        <form method="post" action="productmanage/add-products" class="user-form">
 
             <div class="top-div">
                 <div class="section1">
@@ -40,6 +40,10 @@
                         <label for="size">Sizes</label>
                         <input type="text" id="size" name="size" placeholder="Enter Sizes" required>
                     </div>
+                    <div class="form-group margin-left">
+                        <label for="price">Price</label>
+                        <input type="text" id="price" name="price" placeholder="Enter Price" required>
+                    </div>
                 </div>
             </div>
 
@@ -50,7 +54,7 @@
             </div>
             <div class="img-put">
                 <div class="image-upload">
-                    <input type="file" id="upload-input" accept="image/*" onchange="previewImage(event)">
+                    <input type="file" id="upload-input" name="pimg" accept="image/*" onchange="previewImage(event)">
                     <label for="upload-input" id="upload-label">Choose Image</label>
                     <div id="image-preview"></div>
                 </div>
