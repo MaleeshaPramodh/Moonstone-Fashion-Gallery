@@ -30,8 +30,7 @@
         <a href="products"><img src="assets/images/icons8-close-16.png" style="margin-left: 100%;"/></a>
         <h1>Product Name</h1>
         </br>
-        <p>This is Description. jweghwj dbjwdwe jqehdqwjhqjkwk jqwheiqwjjkq wheqwh. gewhfgew werweewh huw huwej
-            jwehe wqe. wqewqeqw qwe wqeqw e.</p>
+        <p>This is Description.</p>
         <p class="code">Code: BTH01</p>
         </br>
         <div class="size-selection">

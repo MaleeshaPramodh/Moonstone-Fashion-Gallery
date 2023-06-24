@@ -46,7 +46,7 @@
                             </div>
                             <div class="product-det">
                                 <div class="product-det-left">
-                                    <div class="product-det-left-top"><span class="item-name">Code: BTH01</span></div>
+                                    <div class="product-det-left-top"><span class="item-name">Wrap dress - Code: BTH01</span></div>
 
                                     <div class="product-det-left-bottom"><span class="item-price">Rs. 3500.00</span>
                                     </div>

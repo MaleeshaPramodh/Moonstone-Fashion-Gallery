@@ -26,7 +26,7 @@
         <article class="product">
             <header>
                 <a class="remove">
-                    <img src="http://www.astudio.si/preview/blockedwp/wp-content/uploads/2012/08/1.jpg" alt="">
+                    <img src="assets/images/images%20(5).jpeg" alt="">
 
                     <h3>Remove product</h3>
                 </a>
@@ -37,9 +37,10 @@
                 <h1>Product name</h1>
 
                 This is description.
+                Code: BTH01
 
                 <div title="You have selected this product to be shipped in the color yellow." style="top: 0" class="color yellow"></div>
-                <div style="top: 43px" class="type small">XXL</div>
+                <div style="top: 43px" class="type small">XS</div>
             </div>
 
             <footer class="content">
@@ -48,84 +49,84 @@
                 <span class="qt-plus">+</span>
 
                 <h2 class="full-price">
-                    Rs.29.98
+                    Rs.3500.00
                 </h2>
 
                 <h2 class="price">
-                    Rs.14.99
+                    Rs.7000.00
                 </h2>
             </footer>
         </article>
 
-        <article class="product">
-            <header>
-                <a class="remove">
-                    <img src="http://www.astudio.si/preview/blockedwp/wp-content/uploads/2012/08/3.jpg" alt="">
+<%--        <article class="product">--%>
+<%--            <header>--%>
+<%--                <a class="remove">--%>
+<%--                    <img src="" alt="">--%>
 
-                    <h3>Remove product</h3>
-                </a>
-            </header>
+<%--                    <h3>Remove product</h3>--%>
+<%--                </a>--%>
+<%--            </header>--%>
 
-            <div class="content">
+<%--            <div class="content">--%>
 
-                <h1>Product name</h1>
+<%--                <h1>Product name</h1>--%>
 
-                This is description.
+<%--                This is description.--%>
 
-                <div title="You have selected this product to be shipped in the color red." style="top: 0" class="color red"></div>
-                <div title="You have selected this product to be shipped sized Small."  style="top: 43px" class="type small">Small</div>
-            </div>
+<%--                <div title="You have selected this product to be shipped in the color red." style="top: 0" class="color red"></div>--%>
+<%--                <div title="You have selected this product to be shipped sized Small."  style="top: 43px" class="type small">Small</div>--%>
+<%--            </div>--%>
 
-            <footer class="content">
+<%--            <footer class="content">--%>
 
-                <span class="qt-minus">-</span>
-                <span class="qt">1</span>
-                <span class="qt-plus">+</span>
+<%--                <span class="qt-minus">-</span>--%>
+<%--                <span class="qt">1</span>--%>
+<%--                <span class="qt-plus">+</span>--%>
 
-                <h2 class="full-price">
-                    Rs.79.99
-                </h2>
+<%--                <h2 class="full-price">--%>
+<%--                    Rs.79.99--%>
+<%--                </h2>--%>
 
-                <h2 class="price">
-                    Rs.79.99
-                </h2>
-            </footer>
-        </article>
+<%--                <h2 class="price">--%>
+<%--                    Rs.79.99--%>
+<%--                </h2>--%>
+<%--            </footer>--%>
+<%--        </article>--%>
 
-        <article class="product">
-            <header>
-                <a class="remove">
-                    <img src="http://www.astudio.si/preview/blockedwp/wp-content/uploads/2012/08/5.jpg" alt="">
+<%--        <article class="product">--%>
+<%--            <header>--%>
+<%--                <a class="remove">--%>
+<%--                    <img src="" alt="">--%>
 
-                    <h3>Remove product</h3>
-                </a>
-            </header>
+<%--                    <h3>Remove product</h3>--%>
+<%--                </a>--%>
+<%--            </header>--%>
 
-            <div class="content">
+<%--            <div class="content">--%>
 
-                <h1>Product name</h1>
+<%--                <h1>Product name</h1>--%>
 
-                This is description.
+<%--                This is description.--%>
 
-                <div title="You have selected this product to be shipped in the color blue." style="top: 0" class="color blue"></div>
-                <div style="top: 43px" class="type small">Large</div>
-            </div>
+<%--                <div title="You have selected this product to be shipped in the color blue." style="top: 0" class="color blue"></div>--%>
+<%--                <div style="top: 43px" class="type small">Large</div>--%>
+<%--            </div>--%>
 
-            <footer class="content">
+<%--            <footer class="content">--%>
 
-                <span class="qt-minus">-</span>
-                <span class="qt">3</span>
-                <span class="qt-plus">+</span>
+<%--                <span class="qt-minus">-</span>--%>
+<%--                <span class="qt">3</span>--%>
+<%--                <span class="qt-plus">+</span>--%>
 
-                <h2 class="full-price">
-                    Rs.53.99
-                </h2>
+<%--                <h2 class="full-price">--%>
+<%--                    Rs.53.99--%>
+<%--                </h2>--%>
 
-                <h2 class="price">
-                    Rs.17.99
-                </h2>
-            </footer>
-        </article>
+<%--                <h2 class="price">--%>
+<%--                    Rs.17.99--%>
+<%--                </h2>--%>
+<%--            </footer>--%>
+<%--        </article>--%>
 
     </section>
 
@@ -135,13 +136,13 @@
     <div class="container clearfix">
 
         <div class="left">
-            <h2 class="subtotal">Subtotal: Rs.<span>163.96</span></h2>
-            <h3 class="tax">Taxes (5%): Rs.<span>8.2</span></h3>
-            <h3 class="shipping">Shipping: Rs.<span>5.00</span></h3>
+            <h2 class="subtotal">Subtotal: Rs.<span>7000.00</span></h2>
+<%--            <h3 class="tax">Taxes (5%): Rs.<span>8.2</span></h3>--%>
+            <h3 class="shipping">Shipping: Rs.<span>500.00</span></h3>
         </div>
 
         <div class="right">
-            <h1 class="total">Total: Rs.<span>177.16</span></h1>
+            <h1 class="total">Total: Rs.<span>7500.00</span></h1>
             <a class="btn">Checkout</a>
         </div>
 

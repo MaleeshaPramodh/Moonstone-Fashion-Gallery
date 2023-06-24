@@ -10,5 +10,6 @@
         <property name="hibernate.show_sql">true</property>
 
         <mapping class="com.jiat.moonstone.entity.User"/>
+        <mapping class="com.jiat.moonstone.entity.Product"/>
     </session-factory>
 </hibernate-configuration>

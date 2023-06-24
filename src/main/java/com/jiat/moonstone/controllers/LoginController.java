@@ -34,11 +34,14 @@ public class LoginController {
             if (!user.isActive()){
                 return "redirect:/";
             }else if(user.getEmail_verified_at() == null){
+                System.out.println("not email verify");
                 return "redirect:/";
+
             }else {
                 HttpSession s = request.getSession();
                 s.setAttribute("user", user.getId());
                 s.setAttribute("user_type", user.getUserType());
+                System.out.println("email verify");
                 return "redirect:/";
             }
         }catch (NoResultException e){
