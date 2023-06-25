@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="java.sql.*" %>
 <jsp:include page="adminheader.jsp"/>
 <%--
   Created by IntelliJ IDEA.
@@ -7,6 +9,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+
 <html>
 <head>
     <title>Moonstone Fashion</title>
@@ -17,7 +21,7 @@
     <div class="main-box">
         <h1>Product Control Panel</h1>
 
-        <form class="user-form">
+        <form method="post" action="productmanage/add-products" class="user-form">
 
             <div class="top-div">
                 <div class="section1">
@@ -40,6 +44,10 @@
                         <label for="size">Sizes</label>
                         <input type="text" id="size" name="size" placeholder="Enter Sizes" required>
                     </div>
+                    <div class="form-group margin-left">
+                        <label for="price">Price</label>
+                        <input type="text" id="price" name="price" placeholder="Enter Price" required>
+                    </div>
                 </div>
             </div>
 
@@ -50,12 +58,11 @@
             </div>
             <div class="img-put">
                 <div class="image-upload">
-                    <input type="file" id="upload-input" accept="image/*" onchange="previewImage(event)">
+                    <input type="file" id="upload-input" name="pimg" accept="image/*" onchange="previewImage(event)">
                     <label for="upload-input" id="upload-label">Choose Image</label>
                     <div id="image-preview"></div>
                 </div>
             </div>
-
 
 
             <div class="form-group">
@@ -73,38 +80,44 @@
         <table class="user-table">
             <thead>
             <tr>
-                <th>Product name</th>
+                <th>Name</th>
                 <th>Code</th>
                 <th>Qty</th>
-                <th>Sizes</th>
+                <th>Size</th>
+                <th>Price</th>
                 <th>Description</th>
-                <th>Action</th>
+                <th>Image</th>
+                <th>Manage</th>
             </tr>
             </thead>
+
             <tbody>
-            <tr>
-                <td>Wrap Dress</td>
-                <td>BHD0112</td>
-                <td>10</td>
-                <td>XS, S, M, L, XL, XXL</td>
-                <td>This is Description</td>
-                <td>
-                    <button class="btn-edit">Edit</button>
-                    <button class="btn-delete">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td>Sheath Dress</td>
-                <td>BHD0221</td>
-                <td>15</td>
-                <td>S, M, L, XL</td>
-                <td>This is Description</td>
-                <td>
-                    <button class="btn-edit">Edit</button>
-                    <button class="btn-delete">Delete</button>
-                </td>
-            </tr>
+            <c:forEach items="${requestScope.products}" var="product">
+                <tr>
+                    <td> ${product.pname}
+                    </td>
+                    <td>${product.code}
+                    </td>
+                    <td>${product.qty}
+                    </td>
+                    <td>${product.size}
+                    </td>
+                    <td>${product.price}
+                    </td>
+                    <td>${product.description}
+                    </td>
+                    <td><img style="width: 100px; height: 100px; object-fit: cover;" src="assets/images/${product.pimg}">
+                    </td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+            </c:forEach>
+
             </tbody>
+
+
         </table>
     </div>
 

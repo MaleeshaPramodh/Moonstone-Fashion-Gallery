@@ -5,16 +5,27 @@ import com.jiat.moonstone.util.HibernateUtil;
 import org.baswell.routes.HttpMethod;
 import org.baswell.routes.Route;
 import org.baswell.routes.Routes;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Routes(value = "/productmanage")
 public class ProductManageController {
-
+    Session session = HibernateUtil.getSessionFactory().openSession();
     @Route
-    public String get(HttpServletRequest request) {
+    public String get(HttpServletRequest request){
+        Query query = session.createQuery("select it from Product it");
+        try{
+            List<Product> products = query.list();
+            request.setAttribute("products", products);
+            System.out.println(products);
+        }catch (NoResultException e){
+            System.out.println("no result");
+        }
         return "adminpanel/productmanage.jsp";
     }
     @Route(value = "/add-products", respondsToMethods = {HttpMethod.POST})

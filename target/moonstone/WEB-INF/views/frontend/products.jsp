@@ -8,12 +8,13 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://kwonnam.pe.kr/jsp/template-inheritance" prefix="layout" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <layout:extends name="base">
     <layout:put block="stylecss" type="REPLACE">
         <title>Moonstone Fashion</title>
         <link type="text/css" rel="stylesheet" href="assets/SCSS/products.css"/>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     </layout:put>
     <layout:put block="index" type="REPLACE">
         <div id="body">
@@ -26,6 +27,7 @@
                 </div>
                 <img src="assets/images/online-fashion-shopping-with-laptop%20(3).jpg" class="up-img">
             </div>
+
             <section class="section2" style="margin-top: 20vh;">
                 <div class="section-2-div-top-search">
                     <form method="post" action="#" class="product-search-form">
@@ -34,77 +36,87 @@
                         <input type="submit" value="SEARCH" class="search-button"/>
                     </form>
                 </div>
+
                 <div class="section-2-product-list">
                     <div class="product-row1">
-                        <div class="pro">
-                            <div class="pro-img" style="
+                        <c:forEach items="${requestScope.products}" var="product">
+                            <div class="pro">
+                                <div class="pro-img" style="
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;">
-                                <img src="assets/images/images%20(5).jpeg">
+                                    <img src="assets/images/${product.pimg}">
 
-                            </div>
-                            <div class="product-det">
-                                <div class="product-det-left">
-                                    <div class="product-det-left-top"><span class="item-name">Wrap dress - Code: BTH01</span></div>
+                                </div>
+                                <div class="product-det">
+                                    <div class="product-det-left">
+                                        <div class="product-det-left-top">
+                                            <span class="item-name">${product.pname}</span>
+                                            <span class="item-name">${product.code}</span>
+                                        </div>
 
-                                    <div class="product-det-left-bottom"><span class="item-price">Rs. 3500.00</span>
+                                        <div class="product-det-left-bottom">
+                                            <span class="item-price">LKR ${product.price} </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-det-right">
+                                        <div class="product-det-right-top">
+                                            <span class="qty-label">${product.qty}</span>
+<%--                                            <span class="qty">12</span>&nbsp;&nbsp;--%>
+                                        </div>
+                                        <div class="product-det-right-bottom">
+                                            <button class="sell-btn"><a href="viewproduct"
+                                                                        style="text-decoration: none; color: white;">Sell</a>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="product-det-right">
-                                    <div class="product-det-right-top"><span class="qty-label">Qty : </span><span
-                                            class="qty">12</span>&nbsp;&nbsp;
-                                    </div>
-                                    <div class="product-det-right-bottom">
-                                        <button class="sell-btn"><a href="viewproduct"
-                                                                    style="text-decoration: none; color: white;">Sell</a>
-                                        </button>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                        <div class="pro">
-                            <div class="pro-img" style="
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;">
+                        </c:forEach>
 
-                            </div>
-                            <div class="product-det">
+                            <%--                        <div class="pro">--%>
+                            <%--                            <div class="pro-img" style="--%>
+                            <%--        background-size: cover;--%>
+                            <%--        background-position: center;--%>
+                            <%--        background-repeat: no-repeat;">--%>
 
-                            </div>
-                        </div>
-                        <div class="pro">
-                            <div class="pro-img" style=" background-image: url('images/plant4.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;">
+                            <%--                            </div>--%>
+                            <%--                            <div class="product-det">--%>
 
-                            </div>
-                            <div class="product-det">
+                            <%--                            </div>--%>
+                            <%--                        </div>--%>
+                            <%--                        <div class="pro">--%>
+                            <%--                            <div class="pro-img" style=" background-image: url('images/plant4.jpg');--%>
+                            <%--        background-size: cover;--%>
+                            <%--        background-position: center;--%>
+                            <%--        background-repeat: no-repeat;">--%>
 
-                            </div>
-                        </div>
-                        <div class="pro">
-                            <div class="pro-img" style="
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;">
-                                <img src="">
+                            <%--                            </div>--%>
+                            <%--                            <div class="product-det">--%>
 
-                            </div>
-                            <div class="product-det">
+                            <%--                            </div>--%>
+                            <%--                        </div>--%>
+                            <%--                        <div class="pro">--%>
+                            <%--                            <div class="pro-img" style="--%>
+                            <%--        background-size: cover;--%>
+                            <%--        background-position: center;--%>
+                            <%--        background-repeat: no-repeat;">--%>
+                            <%--                                <img src="">--%>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-row1">
-                        <div class="pro"></div>
-                        <div class="pro"></div>
-                        <div class="pro"></div>
-                        <div class="pro"></div>
-                    </div>
-                </div>
+                            <%--                            </div>--%>
+                            <%--                            <div class="product-det">--%>
+
+                            <%--                            </div>--%>
+                            <%--                        </div>--%>
+
+                            <%--                    </div>--%>
+                            <%--                    <div class="product-row1">--%>
+                            <%--                        <div class="pro"></div>--%>
+                            <%--                        <div class="pro"></div>--%>
+                            <%--                        <div class="pro"></div>--%>
+                            <%--                        <div class="pro"></div>--%>
+                            <%--                    </div>--%>
+<%--                    </div>--%>
             </section>
         </div>
     </layout:put>

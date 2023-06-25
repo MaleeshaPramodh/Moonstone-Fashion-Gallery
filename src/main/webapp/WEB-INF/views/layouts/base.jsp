@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://kwonnam.pe.kr/jsp/template-inheritance" prefix="layout" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,23 +24,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="assets/images/—Pngtree—.png"/>
-
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/header.css"/>
-    <layout:block name="stylecss"></layout:block>
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/footer.css"/>
-    <layout:block name="stylecss"></layout:block>
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/aboutus.css"/>
-    <layout:block name="stylecss"></layout:block>
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/gallery.css"/>
-    <layout:block name="stylecss"></layout:block>
     <link type="text/css" rel="stylesheet" href="assets/SCSS/products.css"/>
-    <layout:block name="stylecss"></layout:block>
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/profile.css"/>
-    <layout:block name="stylecss"></layout:block>
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/viewproduct.css"/>
-    <layout:block name="stylecss"></layout:block>
     <link type="text/css" rel="stylesheet" href="assets/SCSS/css/cart.css"/>
 
+    <layout:block name="stylecss"></layout:block>
 
 </head>
 
@@ -69,9 +63,19 @@
                         <a class="menu" href="/moonstone/aboutus">
                             <span class="s1">About Us</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </a>
-                        <a class="menu" href="login">
-                            <span class="s1">Login</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </a>
+                        <c:choose>
+                            <c:when test="${user}">
+                                <a class="menu" href="/moonstone/profile">
+                                    <span class="s1">Profile</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </a>
+                            </c:when>
+                            <c:otherwise>
+                                <a class="menu" href="login">
+                                    <span class="s1">Login</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </a>
+                            </c:otherwise>
+                        </c:choose>
+
                     </div>
                 </td>
             </tr>
@@ -96,21 +100,6 @@
     </div>
 </header>
 <layout:block name="index">
-
-</layout:block>
-<layout:block name="aboutus">
-
-</layout:block>
-<layout:block name="gallery">
-
-</layout:block>
-<layout:block name="product">
-
-</layout:block>
-<layout:block name="profile">
-
-</layout:block>
-<layout:block name="viewproduct">
 
 </layout:block>
 <footer class="ft">

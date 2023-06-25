@@ -1,9 +1,15 @@
 package com.jiat.moonstone.controllers;
 
+import com.jiat.moonstone.entity.Product;
+import com.jiat.moonstone.util.HibernateUtil;
 import org.baswell.routes.Route;
 import org.baswell.routes.Routes;
+import org.hibernate.Query;
+import org.hibernate.Session;
 
+import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Routes
 public class HomeController {
@@ -26,7 +32,15 @@ public class HomeController {
 
     @Route("/products")
     public String products(HttpServletRequest request){
-        System.out.println("product");
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Query query = session.createQuery("select it from Product it");
+        try{
+            List<Product> products = query.list();
+            request.setAttribute("products", products);
+            System.out.println(products);
+        }catch (NoResultException e){
+            System.out.println("no result");
+        }
         return "frontend/products.jsp";
     }
 
