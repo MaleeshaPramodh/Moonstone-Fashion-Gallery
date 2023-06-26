@@ -80,12 +80,5 @@ public class Product {
     public void setPimg(String pimg) {
         this.pimg = pimg;
     }
-
-    public String getDeleteButtonHtml() {
-        return "<form action='deleteData' method='post'>"
-                + "<input type='hidden' name='id' value='" + id + "'>"
-                + "<input type='submit' value='Delete'>"
-                + "</form>";
-    }
 }
 
