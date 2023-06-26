@@ -110,7 +110,10 @@
                     </td>
                     <td>
                         <button class="btn-edit">Edit</button>
-                        <button class="btn-delete">Delete</button>
+                        <form action="productmanage/delete-products" method="post">
+                            <button class="btn-delete">Delete</button>
+                        </form>
+
                     </td>
                 </tr>
             </c:forEach>
