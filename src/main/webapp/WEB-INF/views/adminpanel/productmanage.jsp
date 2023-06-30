@@ -109,7 +109,9 @@
                     <td><img style="width: 100px; height: 100px; object-fit: cover;" src="assets/images/${product.pimg}">
                     </td>
                     <td>
+                        <form action="productmanage/update-products" method="post">
                         <button class="btn-edit">Edit</button>
+                        </form>
                         <form action="productmanage/delete-products" method="post">
                             <button class="btn-delete">Delete</button>
                         </form>
