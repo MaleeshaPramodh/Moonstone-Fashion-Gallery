@@ -8,11 +8,11 @@
 <%@ page import="java.sql.*" %>
 
 <%
-    // Retrieving the id parameter from the request
+    // Retrieve the ID parameter from the request
     int id = Integer.parseInt(request.getParameter("id"));
 
-    // Establishing database connection
-    String jdbcUrl = "jdbc:mysql://localhost:3306/moonstone_db?useSSL=false";
+    // Establish database connection
+    String jdbcUrl = "jdbc:mysql://localhost:3306/moonstone_db";
     String username = "root";
     String password = "1234";
 
@@ -20,20 +20,23 @@
     PreparedStatement statement = null;
 
     try {
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName("com.mysql.cj.jdbc.Driver");
         connection = DriverManager.getConnection(jdbcUrl, username, password);
 
-        // Deleting the row from the database
-        String query = "DELETE FROM products WHERE id = ?";
+        // Create the delete query with a parameterized statement
+        String query = "DELETE FROM Product WHERE id = ?";
         statement = connection.prepareStatement(query);
         statement.setInt(1, id);
-        statement.executeUpdate();
 
-        // Redirecting back to the page that displays the table
-        response.sendRedirect("/moonstone/productmanage");
+        // Execute the delete query
+        int rowCount = statement.executeUpdate();
+
+        // Print the number of affected rows
+        System.out.println("Rows deleted: " + rowCount);
     } catch (Exception e) {
         e.printStackTrace();
     } finally {
+        // Close the statement and database connection
         if (statement != null) {
             statement.close();
         }
@@ -41,4 +44,7 @@
             connection.close();
         }
     }
+
+    // Redirect back to the page displaying the table
+    response.sendRedirect("/productmanage");
 %>

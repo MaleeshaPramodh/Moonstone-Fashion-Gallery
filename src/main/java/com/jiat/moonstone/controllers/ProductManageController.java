@@ -16,6 +16,7 @@ import javax.persistence.criteria.Root;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.xml.ws.Response;
 import java.io.IOException;
 import java.sql.Statement;
 import java.util.List;
@@ -60,42 +61,25 @@ public class ProductManageController {
     }
 
     @Route(value = "/delete-products", respondsToMethods = {HttpMethod.POST})
-    public String doPost(HttpServletRequest request) {
-        Query query = session.createQuery("delete from Product where id=:id");
-        try {
-            List<Product> products = query.list();
-            request.setAttribute("id", products);
-            System.out.println(products);
-        } catch (NoResultException e) {
-            System.out.println("no result");
+    public String deleteItems(HttpServletRequest request) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        String idParam = request.getParameter("id");
+        if (idParam == null) {
+            return "redirect:/productmanage";
         }
-        return "adminpanel/productmanage.jsp";
-    }
-
-    @Route(value = "/update-products", respondsToMethods = {HttpMethod.POST})
-    public String update(HttpServletRequest request) {
-
-
-        Query query = session.createQuery("UPDATE Product SET pname=:pname, code=:code, qty=:qty, size=:size, price=:price, description=:description, pimg=:pimg WHERE id=:id");
-
-        query.setParameter("id", 4L);
-
+        Long id = Long.parseLong(idParam);
         Transaction transaction = session.beginTransaction();
-
-        query.executeUpdate();
-
-        transaction.commit();
-
-        CriteriaBuilder cb = session.getCriteriaBuilder();
-        CriteriaQuery<Product> cqu =  cb.createQuery(Product.class);
-        Root<Product> root = cqu.from(Product.class);
-        cqu.select(root);
-
-        List<Product> list =  session.createQuery(cqu).list();
-        list.forEach(user -> {
-//          System.out.println(user.getEmail());
-        });
-        return "adminpanel/productmanage.jsp";
+        try {
+            Product products = session.get(Product.class, id);
+            if (products != null) {
+                session.delete(products);
+            }
+            transaction.commit();
+        } catch (Exception e) {
+            transaction.rollback();
+        } finally {
+            session.close();
+        }
+        return "redirect:/productmanage";
     }
-
 }
