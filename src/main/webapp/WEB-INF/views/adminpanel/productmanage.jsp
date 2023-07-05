@@ -80,6 +80,7 @@
         <table class="user-table">
             <thead>
             <tr>
+                <th>Id</th>
                 <th>Name</th>
                 <th>Code</th>
                 <th>Qty</th>
@@ -94,6 +95,8 @@
             <tbody>
             <c:forEach items="${requestScope.products}" var="product">
                 <tr>
+                    <td> ${product.id}
+                    </td>
                     <td> ${product.pname}
                     </td>
                     <td>${product.code}
@@ -108,14 +111,16 @@
                     </td>
                     <td><img style="width: 100px; height: 100px; object-fit: cover;" src="assets/images/${product.pimg}">
                     </td>
-                    <td>
-                        <form action="productmanage/update-products" method="post">
-                        <button class="btn-edit">Edit</button>
-                        </form>
-                        <form action="productmanage/delete-products" method="post">
-                            <button class="btn-delete">Delete</button>
-                        </form>
 
+                    <td>
+<%--                        <form action="productmanage/update-products" method="post">--%>
+                        <button class="btn-edit">Edit</button>
+<%--                        </form>--%>
+
+                        <form method="post" action="productmanage/delete-products">
+                            <input type="hidden" name="id" value="${product.getId()}">
+                            <button class="btn-delete" type="submit">Delete</button>
+                        </form>
                     </td>
                 </tr>
             </c:forEach>
